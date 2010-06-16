@@ -1,0 +1,86 @@
+/* Eric Meyer reset */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+/* /Eric Meyer reset */
+
+body {
+  text-align: center;
+  background-color: #666;
+}
+
+#header, #main, #footer{
+  width: 800px;
+  margin: auto;
+  padding: 1em;
+  clear:both;
+}
+
+#header, #main {
+  color: #000;
+  background-color: #fff;
+}
+
+#footer {
+  color: #fff;
+  background-color: #000;
+  text-align:left;
+}
+
+.resume a {
+  font-size:24px;
+  text-decoration:none;
+}
+.resume a:hover {
+  text-decoration:underline;
+}
+
+#month-nav {
+  margin:1em;
+}
+
+#month-nav li{
+  display:inline;
+}
+
+#current-month {
+  font-weight:bold;
+  font-size:24px;
+}
+
+#validation {
+  margin:2em;
+}
+
+table {
+  margin: auto;
+  margin-top: 1em;
+}
+
+td, th {:50%; padding: 3px;}
+th {text-align:left; width:70%}
+td {text-align:right; width:30%}
+
+th {padding-left:5em;}
+.client th {padding-left:2em;}
+.client th, .client td{border-top:1px dashed #000;}
+.total th {padding-left:0em;}
+
+.not_valid {
+  color:#f00;
+  font-style:italic;
+  font-size:8pt;
+}
+
+.block li{
+  display:inline;
+  line-height:24pt;
+  padding:0.5em;
+}

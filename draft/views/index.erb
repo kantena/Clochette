@@ -1,0 +1,22 @@
+<ul id="month-nav">
+  <li><a href="/02-10">Février 2010</a></li>
+  <li id="current-month"><%= "#{@current_month} #{@current_year}" %></li>
+  <li><a href="/04-10">Avril 2010</a></li>
+</ul>
+
+<table>
+  <tbody>
+    <tr class="total"><th>Total</th><td>24</td></tr>
+    <tr class="client"><th><a href="/clients/vcsi">VCSI</a></th><td>13</td></tr>
+    <tr><th><a href="/yaf">Yaf</a></th><td>3</td></tr>
+    <tr><th>Bga <span class="not_valid">(non validé)</span></th><td>10</td></tr>
+    <tr class="client"><th>Mr Bricolo</th><td>8</td></tr>
+    <tr><th>Thr</th><td>8</td></tr>
+    <tr class="client"><th>Raflatak</th><td>3</td></tr>
+    <tr><th>Thk</th><td>3</td></tr>
+  </tbody>
+</table>
+
+<form id="validation" action="/validate-current-month">
+  <input type="submit" value="Validation" />
+</form>

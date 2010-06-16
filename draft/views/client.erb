@@ -1,0 +1,17 @@
+<ul id="month-nav">
+  <li><a href="/02-10">Vinci: Février 2010</a></li>
+  <li id="current-month">Vinci: <%= "#{@current_month} #{@current_year}" %></li>
+  <li><a href="/04-10">Vinci: Avril 2010</a></li>
+</ul>
+
+<table>
+  <tbody>
+    <tr class="client"><th><a href="/clients/vcsi">VCSI</a></th><td>13</td></tr>
+    <tr><th><a href="/yaf">Yaf</a></th><td>3</td></tr>
+    <tr><th>Bga <span class="not_valid">(non validé)</span></th><td>10</td></tr>
+  </tbody>
+</table>
+
+<form id="validation" action="/validate-current-month">
+  <input type="submit" value="Validation" />
+</form>

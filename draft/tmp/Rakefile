@@ -1,0 +1,24 @@
+require 'rubygems'
+require 'dm-core'
+require 'dm-migrations'
+
+desc "Migration"
+task :migrate do
+
+  DataMapper.setup(:default, {
+    :adapter  => 'sqlite3',
+    :database => 'db/crack.sqlite3'
+  })
+
+
+  class Event
+    include DataMapper::Resource
+
+    property :id, Serial
+    property :title, String
+    property :start, DateTime
+    property :end, DateTime
+end
+
+  DataMapper::Migrations::Repository.auto_migrate!
+end
