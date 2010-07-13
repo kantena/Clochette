@@ -8,9 +8,9 @@ describe PagesController do
   end
 
 
-  describe "GET 'facturation_clients'" do
+  describe "GET 'infos_facturation'" do
     it "should be successful" do
-      get 'facturation_clients'
+      get 'infos_facturation'
       response.should be_success
     end
   end

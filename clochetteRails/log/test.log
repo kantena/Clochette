@@ -9,3 +9,77 @@ Completed in 6ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/facturation_c
 Processing PagesController#facturation_clients (for 0.0.0.0 at 2010-07-13 14:26:59) [GET]
 Rendering pages/facturation_clients
 Completed in 7ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/facturation_clients]
+Rendering pages/facturation_clients
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 16:14:41) [GET]
+Rendering pages/infos_facturation
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 16:16:22) [GET]
+Rendering pages/infos_facturation
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 16:31:19) [GET]
+Rendering pages/infos_facturation
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+Rendering pages/facturation_clients
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 16:33:35) [GET]
+Rendering pages/infos_facturation
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 17:21:52) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: clients: SELECT * FROM "clients" [0m
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 17:26:18) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: clients: SELECT * FROM "clients" [0m
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 17:27:56) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: clients: SELECT * FROM "clients" [0m
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 17:39:59) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: clients: SELECT * FROM "clients" [0m
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 17:52:42) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: clients: SELECT * FROM "clients" [0m
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 17:55:13) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+Rendering pages/facturation_clients
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 17:57:33) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+Rendering pages/facturation_clients
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 18:04:40) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 8ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 18:09:50) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 10ms (View: 1, DB: 2) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-13 18:10:25) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]

@@ -1,5 +1,7 @@
-class PagesController < ApplicationController
-  def facturation_clients
-  end
 
+class PagesController < ApplicationController
+  def infos_facturation
+     @clients = Client.all
+  end
+  
 end

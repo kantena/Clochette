@@ -1,13 +1,14 @@
-infos_facturation_path='pages/facturation_clients'
 
 #debuts développement des critères d'acceptances
-Given /^Je ne suis pas encore connecte a l'application$/ do
+Given /^un client qui possede le nom "([^"]*)"$/ do |arg1|
+  @client=arg1
 end
 
-When /^Je lance la page ''facturation_clients"$/ do
+When /^je lance la page "([^"]*)"$/ do |arg1|
+  infos_facturation_path="pages/" + arg1
   visit infos_facturation_path
 end
 
-Then /^Je dois avoir resume la liste des clients de Kantena$/ do
-  pending # express the regexp above with the code you wish you had
+Then /^l'application me retourne "([^"]*)", nom du client$/ do |arg1|
+  response.should contain(arg1)
 end

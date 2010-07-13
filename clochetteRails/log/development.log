@@ -271,3 +271,693 @@ Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/pages/facturation
 Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 14:13:18) [GET]
 Rendering pages/facturation_clients
 Completed in 30ms (View: 23, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
+
+
+Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 15:21:12) [GET]
+Rendering pages/facturation_clients
+Completed in 25ms (View: 21, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:12:28) [GET]
+Rendering pages/infos_facturation
+Completed in 27ms (View: 21, DB: 0) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 16:22:54) [GET]
+
+NameError (uninitialized constant ClientsController::Client):
+  app/controllers/clients_controller.rb:5:in `index'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.0ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-07-13 16:23:05) [GET]
+  Parameters: {"id"=>"index"}
+
+NameError (uninitialized constant ClientsController::Client):
+  app/controllers/clients_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (116.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 16:23:20) [GET]
+
+ActionController::RoutingError (No route matches "/client/index" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (79.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (14.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100713142223)
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100713142223')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("clients")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 16:25:30) [GET]
+
+ActionController::RoutingError (No route matches "/client/index" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 16:25:36) [GET]
+
+ActionController::RoutingError (No route matches "/client" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 16:26:51) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 1400ms (View: 1371, DB: 2) | 200 OK [http://localhost/clients]
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2010-07-13 16:27:02) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 68ms (View: 48, DB: 0) | 200 OK [http://localhost/clients/new]
+
+
+Processing ClientsController#create (for 127.0.0.1 at 2010-07-13 16:27:13) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z6EjbfjY2nu3jadbECQuR3lg5y7iNjQ+UZWBMX5LneE=", "client"=>{"name"=>"Apple"}}
+  [4;35;1mClient Create (2.0ms)[0m   [0mINSERT INTO "clients" ("name", "updated_at", "created_at") VALUES('Apple', '2010-07-13 14:27:13', '2010-07-13 14:27:13')[0m
+Redirected to http://localhost:3000/clients/1
+Completed in 64ms (DB: 2) | 302 Found [http://localhost/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-07-13 16:27:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 50ms (View: 27, DB: 1) | 200 OK [http://localhost/clients/1]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 16:27:31) [GET]
+  [4;35;1mClient Load (2.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 42ms (View: 20, DB: 2) | 200 OK [http://localhost/clients]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:37:36) [GET]
+Rendering pages/infos_facturation
+Completed in 24ms (View: 19, DB: 0) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:38:38) [GET]
+Rendering pages/infos_facturation
+Completed in 26ms (View: 19, DB: 0) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:39:15) [GET]
+Rendering pages/infos_facturation
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:43:05) [GET]
+Rendering pages/infos_facturation
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:43:28) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 33ms (View: 9, DB: 1) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:43:46) [GET]
+Rendering pages/infos_facturation
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:44:30) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 30ms (View: 8, DB: 1) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:45:57) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 18ms (View: 9, DB: 2) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing ApplicationController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:46:10) [GET]
+
+MissingSourceFile (no such file to load -- ../models/client):
+  app/controllers/pages_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (319.0ms)
+Rendered rescues/_request_and_response (7.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:47:29) [GET]
+
+MissingSourceFile (no such file to load -- /models/client):
+  app/controllers/pages_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (123.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:52:26) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:52:36) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 15ms (View: 5, DB: 1) | 200 OK [http://localhost/pages/infos_facturation]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 16:57:30) [GET]
+  [4;35;1mClient Load (2.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 31ms (View: 22, DB: 2) | 200 OK [http://localhost/pages/infos_facturation]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" LIMIT 1[0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" LIMIT 1[0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" LIMIT 1[0m
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 17:00:49) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 27ms (View: 18, DB: 1) | 200 OK [http://localhost/pages/infos_facturation]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" LIMIT 1[0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-07-13 17:05:00) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Client with ID=index):
+  app/controllers/clients_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (144.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 17:05:05) [GET]
+
+ActionController::RoutingError (No route matches "/client/index" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-07-13 17:05:20) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Client with ID=index):
+  app/controllers/clients_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (133.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 17:06:28) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 27ms (View: 17, DB: 1) | 200 OK [http://localhost/clients/]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 17:07:12) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/clients/]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" LIMIT 1[0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" LIMIT 1[0m
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 17:19:38) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 25ms (View: 15, DB: 1) | 200 OK [http://localhost/clients/]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 17:20:12) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 14ms (View: 4, DB: 1) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 17:20:48) [GET]
+  [4;35;1mClient Load (2.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 27ms (View: 18, DB: 2) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 17:23:55) [GET]
+
+ActionController::RoutingError (No route matches "/infos_facturation" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 17:24:05) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 13ms (View: 4, DB: 2) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 17:25:00) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 56ms (View: 36, DB: 2) | 200 OK [http://localhost/pages/infos_facturation]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100713142223)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("clients")[0m
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 17:38:48) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 55ms (View: 36, DB: 2) | 200 OK [http://localhost/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 17:38:51) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 33ms (View: 10, DB: 1) | 200 OK [http://localhost/pages/infos_facturation]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100713142223)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" LIMIT 1[0m
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-07-13 17:47:27) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Client with ID=index):
+  app/controllers/clients_controller.rb:16:in `show'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (296.0ms)
+Rendered rescues/_request_and_response (6.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 17:47:33) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 74ms (View: 54, DB: 1) | 200 OK [http://localhost/clients/]
+
+
+Processing ClientsController#new (for 127.0.0.1 at 2010-07-13 17:47:35) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 76ms (View: 55, DB: 0) | 200 OK [http://localhost/clients/new]
+
+
+Processing ClientsController#create (for 127.0.0.1 at 2010-07-13 17:48:05) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"z6EjbfjY2nu3jadbECQuR3lg5y7iNjQ+UZWBMX5LneE=", "client"=>{"name"=>"Roger"}}
+  [4;36;1mClient Create (4.0ms)[0m   [0;1mINSERT INTO "clients" ("name", "updated_at", "created_at") VALUES('Roger', '2010-07-13 15:48:05', '2010-07-13 15:48:05')[0m
+Redirected to http://localhost:3000/clients/2
+Completed in 93ms (DB: 4) | 302 Found [http://localhost/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-07-13 17:48:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 2) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 199ms (View: 176, DB: 1) | 200 OK [http://localhost/clients/2]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 17:48:15) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 51ms (View: 27, DB: 2) | 200 OK [http://localhost/clients]
+
+
+Processing ClientsController#show (for 127.0.0.1 at 2010-07-13 17:48:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 1) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 39ms (View: 14, DB: 1) | 200 OK [http://localhost/clients/1]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 17:48:24) [GET]
+  [4;36;1mClient Load (3.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 60ms (View: 32, DB: 3) | 200 OK [http://localhost/clients]
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" ORDER BY clients.id DESC LIMIT 1[0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" ORDER BY clients.id DESC LIMIT 1[0m
+
+
+Processing PagesController#infos_facturation (for 127.0.0.1 at 2010-07-13 17:51:59) [GET]
+  [4;35;1mClient Load (2.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 33ms (View: 9, DB: 2) | 200 OK [http://localhost/pages/infos_facturation]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("clients")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (43.0ms)[0m   [0mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (40.0ms)[0m   [0mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schema_migrations")[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (30.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100713142223')[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (44.0ms)[0m   [0;1mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (34.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (13.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100713142223')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateClients (20100713142223)
+Migrating to AjoutClients (20100713155943)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mALTER TABLE "clients" ADD "mon_champ" varchar(255)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100713155943')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("clients")[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (56.0ms)[0m   [0;1mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime, "mon_champ" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100713155943')[0m
+  [4;36;1mSQL (54.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100713142223')[0m
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 18:05:10) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 58ms (View: 31, DB: 2) | 200 OK [http://localhost/clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 18:06:16) [GET]
+  [4;36;1mClient Load (2.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 111ms (View: 87, DB: 2) | 200 OK [http://localhost/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 18:06:19) [GET]
+  [4;35;1mClient Load (2.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 53ms (View: 29, DB: 2) | 200 OK [http://localhost/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 18:06:20) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 53ms (View: 29, DB: 1) | 200 OK [http://localhost/clients]
+
+
+Processing ClientsController#index (for 127.0.0.1 at 2010-07-13 18:06:22) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 52ms (View: 29, DB: 1) | 200 OK [http://localhost/clients]
