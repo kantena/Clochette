@@ -7,8 +7,8 @@ Feature: Avoir acces au releve mensuel d'activites par clients
   Idees de developpement:
   
 @wip
-Scenario: Connection a la page d'informations pour la facturation du client
+Scenario: Affichage d'une liste de clients
   Given Je ne suis pas encore connecte a l'application
   When Je lance la page ''facturation_clients"
-  Then Je dois etre connecte a la page "facturation_clients"
+  Then Je dois avoir resume la liste des clients de Kantena
   
