@@ -1,0 +1,11 @@
+Rendering pages/facturation_clients
+
+
+Processing PagesController#facturation_clients (for 0.0.0.0 at 2010-07-13 14:25:28) [GET]
+Rendering pages/facturation_clients
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/facturation_clients]
+
+
+Processing PagesController#facturation_clients (for 0.0.0.0 at 2010-07-13 14:26:59) [GET]
+Rendering pages/facturation_clients
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/facturation_clients]

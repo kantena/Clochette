@@ -151,3 +151,123 @@ ActionController::RoutingError (No route matches "/holidays/index" with {:method
   c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 13:48:57) [GET]
+
+ActionController::RoutingError (No route matches "/holydays/index" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 13:49:04) [GET]
+
+ActionController::RoutingError (No route matches "/holydays/" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 14:03:24) [GET]
+
+ActionController::RoutingError (No route matches "/pages" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-13 14:04:09) [GET]
+
+ActionController::RoutingError (No route matches "/pages/facturation_client" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#facturation_client (for 127.0.0.1 at 2010-07-13 14:05:14) [GET]
+
+ActionController::UnknownAction (No action responded to facturation_client. Actions: facturation_clients):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 14:06:32) [GET]
+Rendering pages/facturation_clients
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
+
+
+Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 14:09:56) [GET]
+Rendering pages/facturation_clients
+Completed in 31ms (View: 24, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
+
+
+Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 14:10:38) [GET]
+Rendering pages/facturation_clients
+Completed in 186ms (View: 180, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
+
+
+Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 14:11:17) [GET]
+Rendering pages/facturation_clients
+Completed in 27ms (View: 20, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
+
+
+Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 14:11:59) [GET]
+Rendering pages/facturation_clients
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
+
+
+Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 14:13:11) [GET]
+Rendering pages/facturation_clients
+Completed in 23ms (View: 18, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
+
+
+Processing PagesController#facturation_clients (for 127.0.0.1 at 2010-07-13 14:13:18) [GET]
+Rendering pages/facturation_clients
+Completed in 30ms (View: 23, DB: 0) | 200 OK [http://localhost/pages/facturation_clients]
