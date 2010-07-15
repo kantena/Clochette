@@ -9,13 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100713155943) do
+ActiveRecord::Schema.define(:version => 20100715082342) do
 
   create_table "clients", :force => true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "mon_champ"
+    t.string   "nom"
+    t.integer  "jours_a_facturer", :limit => 31
   end
 
 end

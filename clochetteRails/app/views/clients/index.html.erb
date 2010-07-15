@@ -1,13 +1,15 @@
-<h1>Listing clients</h1>
+<h1>Liste des clients</h1>
 
 <table>
   <tr>
-    <th>Name</th>
+    <th>Nom</th>
+    <th>Jours à facturer</th>
   </tr>
 
 <% @clients.each do |client| %>
   <tr>
-    <td><%=h client.name %></td>
+    <td><%=h client.nom %></td>
+    <td><%=h client.jours_a_facturer %></td>
     <td><%= link_to 'Show', client %></td>
     <td><%= link_to 'Edit', edit_client_path(client) %></td>
     <td><%= link_to 'Destroy', client, :confirm => 'Are you sure?', :method => :delete %></td>

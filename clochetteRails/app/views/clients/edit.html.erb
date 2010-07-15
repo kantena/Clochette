@@ -1,11 +1,15 @@
-<h1>Editing client</h1>
+<h1>Edition d'un client</h1>
 
 <% form_for(@client) do |f| %>
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label :nom %><br />
+    <%= f.text_field :nom %>
+  </p>
+  <p>
+    <%= f.label :jours_a_facturer %><br />
+    <%= f.text_field :jours_a_facturer%>
   </p>
   <p>
     <%= f.submit 'Update' %>

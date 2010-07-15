@@ -1,4 +1,49 @@
-<h1> Informations pour la facturation des clients </h1>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>  infos_facturation </title>
+</head>
 
-<h2> <%= @clients.first.name%> </h2>
+<body>
+  <div id="resume_infos_facturation"> 
+    <h1> Informations pour la facturation des clients </h1> 
+
+    <h3> Informations générales </h3>
+    <p> Date dernière mise à jour: <br/>
+            Liste des clients encore à facturer : <br/>
+            Le personnel suivant n'a pas encore validé ses jours de travail : <br/>
+            Notification des événements survenus entre le 25 et la fin du mois :  <br/>
+    <p> 
+  </div>
+  <br/>
+    
+  <div id="tableau_infos_clients">
+  <h3> Informations détaillées </h3>
+    <table>
+    <colgroup>
+      <col span='3' width="200" style=""/>
+    </colgroup>
+    
+    <thead>
+      <tr>
+        <th scope="col">Nom du client</th>
+        <th scope="col">Nombre de jours à facturer</th>
+        <th scope="col">Etat validé ?</th>
+      </tr>
+      </thead>
+  
+    <tbody>
+    <% if @infos_clients.size != 0 %>
+      <% @infos_clients.each do |nom, nb_jours_a_facturer| -%>
+        <tr>
+          <td> <%=nom%> </td>
+			<td> <%=nb_jours_a_facturer%> </td>
+        </tr>
+      <% end -%>
+        
+    <% end %>
+      </tbody>
+      </table>
+  </div>
+  
+</body>
 
