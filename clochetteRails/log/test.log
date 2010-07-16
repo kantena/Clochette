@@ -1264,6 +1264,7 @@ Completed in 10ms (View: 6, DB: 1) | 200 OK [http://test.host/clients/980190962]
   [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
   [4;35;1mClient Load (0.0ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
   [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+<<<<<<< HEAD
   [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
   [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
   [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
@@ -1355,10 +1356,191 @@ Completed in 8ms (View: 6, DB: 0) | 200 OK [http://test.host/pages/fonctionnalit
 
 
 Processing PagesController#authentification (for 0.0.0.0 at 2010-07-16 09:28:28) [GET]
+=======
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:17:19) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 8ms (View: 0, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#authentification (for 0.0.0.0 at 2010-07-15 23:25:34) [GET]
+Rendering pages/authentification
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:25:34) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#authentification (for 0.0.0.0 at 2010-07-15 23:26:30) [GET]
+Rendering pages/authentification
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:26:30) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-15 23:28:44) [GET]
+Rendering pages/fonctionnalites_angelique
+
+
+Processing PagesController#authentification (for 0.0.0.0 at 2010-07-15 23:28:44) [GET]
+Rendering pages/authentification
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:28:44) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 6ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-15 23:35:53) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification_utilisateur (for 0.0.0.0 at 2010-07-15 23:35:53) [GET]
+Rendering pages/authentification_utilisateur
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification_utilisateur]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:35:53) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-15 23:41:47) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification_utilisateur (for 0.0.0.0 at 2010-07-15 23:41:47) [GET]
+Rendering pages/authentification_utilisateur
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/authentification_utilisateur]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:41:47) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 3ms (View: 0, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-15 23:48:02) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 3ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification_utilisateur (for 0.0.0.0 at 2010-07-15 23:48:02) [GET]
+Rendering pages/authentification_utilisateur
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/authentification_utilisateur]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:48:02) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-15 23:50:59) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification_utilisateur (for 0.0.0.0 at 2010-07-15 23:50:59) [GET]
+Rendering pages/authentification_utilisateur
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification_utilisateur]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:50:59) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-15 23:53:19) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification_utilisateur (for 0.0.0.0 at 2010-07-15 23:53:19) [GET]
+Rendering pages/authentification_utilisateur
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification_utilisateur]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:53:19) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-15 23:56:47) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification_utilisateur (for 0.0.0.0 at 2010-07-15 23:56:47) [GET]
+Rendering pages/authentification_utilisateur
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification_utilisateur]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:56:48) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-15 23:58:27) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification_utilisateur (for 0.0.0.0 at 2010-07-15 23:58:27) [GET]
+Rendering pages/authentification_utilisateur
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/pages/authentification_utilisateur]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:58:27) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-16 00:10:16) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification (for 0.0.0.0 at 2010-07-16 00:10:17) [GET]
 Rendering pages/authentification
 Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification]
 
 
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-16 00:10:17) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-16 01:04:38) [GET]
+Rendering pages/fonctionnalites_angelique
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
+
+
+Processing PagesController#authentification (for 0.0.0.0 at 2010-07-16 01:04:38) [GET]
+>>>>>>> 5cbf325b3c0d41f5d8d454b0e5b3c3fed1e19cd3
+Rendering pages/authentification
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification]
+
+
+<<<<<<< HEAD
 Processing PagesController#infos_facturation_mois_dernier (for 0.0.0.0 at 2010-07-16 09:28:28) [GET]
   [4;36;1mClient Load (0.7ms)[0m   [0;1mSELECT * FROM "clients" [0m
 Rendering pages/infos_facturation_mois_dernier
@@ -1399,3 +1581,15 @@ Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/infos_factura
   [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
   [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
   [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+=======
+Processing PagesController#infos_facturation_mois_dernier (for 0.0.0.0 at 2010-07-16 01:04:38) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation_mois_dernier
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://test.host/pages/infos_facturation_mois_dernier]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-16 01:04:38) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
+>>>>>>> 5cbf325b3c0d41f5d8d454b0e5b3c3fed1e19cd3
