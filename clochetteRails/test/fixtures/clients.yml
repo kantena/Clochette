@@ -2,8 +2,8 @@
 
 one:
   nom: 'General Electrics'
-  jours_a_facturer: 
+  jours_a_facturer_mois_courant: 25 
   
 two:
   nom: 'ST'
-  jours_a_facturer: 10
+  jours_a_facturer_mois_courant: 10

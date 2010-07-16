@@ -9,7 +9,7 @@ class ClientTest < ActiveSupport::TestCase
   end
   
   test "un enregistrement s'est correctement realise" do
-    client = Client.new(:nom => 'Apple', :jours_a_facturer => 10)
+    client = Client.new(:nom => 'Apple', :jours_a_facturer_mois_courant => 10)
     assert client.valid?
   end
     
@@ -17,7 +17,7 @@ class ClientTest < ActiveSupport::TestCase
     #presence
     client = Client.new(:nom => '')
     assert client.invalid?
-    #unicitÃ©s
+    #unicités
     client = Client.new( :nom => clients(:one).nom )
     assert !client.save
     assert_equal "has already been taken", client.errors[:nom]
@@ -25,11 +25,11 @@ class ClientTest < ActiveSupport::TestCase
   
   test "contraintes attribut jours_a_facturer" do
    client = clients(:one)
-   client.jours_a_facturer = -1
+   client.jours_a_facturer_mois_courant = -1
    assert client.invalid?
-   client.jours_a_facturer = 32
+   client.jours_a_facturer_mois_courant = 32
    assert client.invalid?
-   client.jours_a_facturer = 'A'
+   client.jours_a_facturer_mois_courant = 'A'
    assert client.invalid?
   end
 
