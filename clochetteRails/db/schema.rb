@@ -12,6 +12,7 @@
 ActiveRecord::Schema.define(:version => 20100715082342) do
 
   create_table "clients", :force => true do |t|
+    t.string   "localisation"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "nom"

@@ -1264,3 +1264,86 @@ Completed in 10ms (View: 6, DB: 1) | 200 OK [http://test.host/clients/980190962]
   [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
   [4;35;1mClient Load (0.0ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
   [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+Rendering pages/facturation_clients
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 17:34:23) [GET]
+  [4;36;1mClient Load (0.9ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+
+
+Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 17:35:25) [GET]
+  [4;36;1mClient Load (0.9ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering pages/infos_facturation
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+  [4;36;1mClient Load (4.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
+  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
+  [4;36;1mClient Load (0.6ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
+  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
+  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
+  [4;35;1mClient Load (0.5ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
+  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m

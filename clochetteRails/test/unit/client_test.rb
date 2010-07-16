@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + '/../test_helper'
 
 class ClientTest < ActiveSupport::TestCase
   fixtures :clients
-  
+    
   test "un enregistrement ne peut etre valide vide" do
     client = Client.new
     assert client.invalid?
@@ -17,7 +17,7 @@ class ClientTest < ActiveSupport::TestCase
     #presence
     client = Client.new(:nom => '')
     assert client.invalid?
-    #unicité
+    #unicitÃ©s
     client = Client.new( :nom => clients(:one).nom )
     assert !client.save
     assert_equal "has already been taken", client.errors[:nom]
