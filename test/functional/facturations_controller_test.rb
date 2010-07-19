@@ -5,12 +5,12 @@ class FacturationsControllerTest < ActionController::TestCase
   
   setup do
     @update = {
-        :client => 'MyString'
-        :nb_jours_a_facturer => 1
-        :etat_valide => false
-        :facturation_envoyee => false
-        :liste_dev_attente_validation => 'MyText'
-        :date_archivage => 2010-07-18
+        :client => 'MyString',
+        :nb_jours_a_facturer => 1,
+        :etat_valide => false,
+        :facturation_envoyee => false,
+        :liste_dev_attente_validation => 'MyText',
+        :date_archivage => 2010-07-18,
         :date_creation => 2010-07-18
     }
   end

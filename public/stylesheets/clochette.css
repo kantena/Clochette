@@ -1,19 +1,17 @@
 #banner  {
-background:  ;
-padding-top:  10px;
-padding-bottom:  10px;
-border-bottom:  2px  solid;
-font:  small-caps  40px/40px  "Times  New  Roman",  serif;
-color:  #000 ;
-text-align:  center;
+    padding-top:  10px;
+    padding-bottom:  10px;
+    border-bottom:  2px  solid;
+    font:  small-caps  40px/40px  "Times  New  Roman",  serif;
+    color:  #000 ;
+    text-align:  center;
 }
 
 #quick_links  {
-background:  ;
-padding-top:  10px;
-padding-bottom:  10px;
-border-bottom:  2px  solid;
-font:  small-caps  "Times  New  Roman",  serif;
-color:  #000 ;
-text-align:  center;
+    padding-top:  10px;
+    padding-bottom:  10px;
+    border-bottom:  2px  solid;
+    font:  small-caps  "Times  New  Roman",  serif;
+    color:  #000 ;
+    text-align:  center;
 }

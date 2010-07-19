@@ -5,12 +5,12 @@ class TravailDeveloppeursControllerTest < ActionController::TestCase
   
   setup do
     @update = {
-        :client => 'MyString'
-        :nom_developpeur: => 'MyString'
-        :nb_jours_travail => 1
-        :validation_nb_jours_travail => false
-        :mois => 'Juillet'
-        :année => 2010
+        :client => 'MyString',
+        :nom_developpeur => 'MyString',
+        :nb_jours_travail => 1,
+        :validation_nb_jours_travail => false,
+        :mois => 'Juillet',
+        :annÃ©e => 2010
     }
   end
   
