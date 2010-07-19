@@ -1,6 +1,5 @@
 class CreateClients < ActiveRecord::Migration
   def self.up
-    drop_table :clients
     
     create_table :clients do |t|
       t.string :nom

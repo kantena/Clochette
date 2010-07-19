@@ -1,5 +1,5 @@
 log/*.log
-^nbproject$
+nbproject/
 tmp/*
 tmp/**/*
 doc/api
