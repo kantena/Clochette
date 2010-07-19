@@ -1,36 +1,8 @@
-require File.dirname(__FILE__) + '/../test_helper'
+require 'test_helper'
 
 class ClientTest < ActiveSupport::TestCase
-  fixtures :clients
-    
-  test "un enregistrement ne peut etre valide vide" do
-    client = Client.new
-    assert client.invalid?
+  # Replace this with your real tests.
+  test "the truth" do
+    assert true
   end
-  
-  test "un enregistrement s'est correctement realise" do
-    client = Client.new(:nom => 'Apple', :jours_a_facturer_mois_courant => 10)
-    assert client.valid?
-  end
-    
-  test "contraintes attribut nom" do
-    #presence
-    client = Client.new(:nom => '')
-    assert client.invalid?
-    #unicités
-    client = Client.new( :nom => clients(:one).nom )
-    assert !client.save
-    assert_equal "has already been taken", client.errors[:nom]
-  end
-  
-  test "contraintes attribut jours_a_facturer" do
-   client = clients(:one)
-   client.jours_a_facturer_mois_courant = -1
-   assert client.invalid?
-   client.jours_a_facturer_mois_courant = 32
-   assert client.invalid?
-   client.jours_a_facturer_mois_courant = 'A'
-   assert client.invalid?
-  end
-
 end

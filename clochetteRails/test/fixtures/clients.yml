@@ -1,9 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  nom: 'General Electrics'
-  jours_a_facturer_mois_courant: 25 
-  
+  nom: Vinci
+  description: MyText
+  infos_projets: VCSI
+  client_ce_mois: true
+
 two:
-  nom: 'ST'
-  jours_a_facturer_mois_courant: 10
+  nom: Cour des comptes
+  description: MyText
+  infos_projets: Prosper
+  client_ce_mois: true

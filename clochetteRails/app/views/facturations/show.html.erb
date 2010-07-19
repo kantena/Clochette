@@ -1,0 +1,36 @@
+﻿<p>
+  <b>Client:</b>
+  <%=h @facturation.client %>
+</p>
+<p>
+  <b>Nb jours a facturer:</b>
+  <%=h @facturation.nb_jours_a_facturer %>
+</p>
+<p>
+  <b>Date creation:</b>
+  <%=h @facturation.date_creation%>
+</p>
+
+<p>
+  <b>Etat valide?:</b>
+  <%=h @facturation.etat_valide %>
+</p>
+
+<p>
+  <b>Facturation envoyee?:</b>
+  <%=h @facturation.facturation_envoyee %>
+</p>
+
+<p>
+  <b>Liste dev attente validation:</b>
+  <%=h @facturation.liste_dev_attente_validation %>
+</p>
+
+<p>
+  <b>Date archivage:</b>
+  <%=h @facturation.date_archivage %>
+</p>
+
+
+<%= link_to 'Edition', edit_facturation_path(@facturation) %> |
+<%= link_to 'Retour', facturations_path %>

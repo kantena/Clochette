@@ -1,4 +1,4 @@
-<h1>Nouveau client</h1>
+﻿<h1>Enregistrement d'un nouveau client</h1>
 
 <% form_for(@client) do |f| %>
   <%= f.error_messages %>
@@ -8,12 +8,20 @@
     <%= f.text_field :nom %>
   </p>
   <p>
-    <%= f.label :jours_a_facturer_mois_courant %><br />
-    <%= f.text_field :jours_a_facturer_mois_courant %>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :rows => 8 %>
   </p>
   <p>
-    <%= f.submit 'Create' %>
+    <%= f.label :infos_projets %><br />
+    <%= f.text_area :infos_projets, :rows => 8 %>
+  </p>
+  <p>
+    <%= f.label :client_ce_mois? %><br />
+    <%= f.check_box :client_ce_mois %>
+  </p>
+  <p>
+    <%= f.submit 'Créer' %>
   </p>
 <% end %>
 
-<%= link_to 'Back', clients_path %>
+<%= link_to 'Retour', clients_path %>

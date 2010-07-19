@@ -1,4 +1,4 @@
-<h1>Edition d'un client</h1>
+﻿<h1>Edition du client</h1>
 
 <% form_for(@client) do |f| %>
   <%= f.error_messages %>
@@ -8,13 +8,21 @@
     <%= f.text_field :nom %>
   </p>
   <p>
-    <%= f.label :jours_a_facturer %><br />
-    <%= f.text_field :jours_a_facturer%>
+    <%= f.label :description %><br />
+    <%= f.text_area :description, :rows => 8 %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.label :infos_projets %><br />
+    <%= f.text_area :infos_projets, :rows => 8 %>
+  </p>
+  <p>
+    <%= f.label :client_ce_mois? %><br />
+    <%= f.check_box :client_ce_mois %>
+  </p>
+  <p>
+    <%= f.submit 'Mise à jour' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @client %> |
-<%= link_to 'Back', clients_path %>
+<%= link_to 'Détails', @client %> |
+<%= link_to 'Retour', clients_path %>

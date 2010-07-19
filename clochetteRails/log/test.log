@@ -1264,99 +1264,6 @@ Completed in 10ms (View: 6, DB: 1) | 200 OK [http://test.host/clients/980190962]
   [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
   [4;35;1mClient Load (0.0ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
   [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-<<<<<<< HEAD
-  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-Rendering pages/facturation_clients
-
-
-Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 17:34:23) [GET]
-  [4;36;1mClient Load (0.9ms)[0m   [0;1mSELECT * FROM "clients" [0m
-Rendering pages/infos_facturation
-Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
-
-
-Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 17:35:25) [GET]
-  [4;36;1mClient Load (0.9ms)[0m   [0;1mSELECT * FROM "clients" [0m
-Rendering pages/infos_facturation
-Completed in 4ms (View: 0, DB: 1) | 200 OK [http://test.host/pages/infos_facturation]
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (4.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (0.6ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.5ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.5ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-
-
-Processing PagesController#fonctionnalites_angelique (for 0.0.0.0 at 2010-07-16 09:28:28) [GET]
-Rendering pages/fonctionnalites_angelique
-Completed in 8ms (View: 6, DB: 0) | 200 OK [http://test.host/pages/fonctionnalites_angelique]
-
-
-Processing PagesController#authentification (for 0.0.0.0 at 2010-07-16 09:28:28) [GET]
-=======
 
 
 Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-15 23:17:19) [GET]
@@ -1535,53 +1442,10 @@ Completed in 13ms (View: 11, DB: 0) | 200 OK [http://test.host/pages/fonctionnal
 
 
 Processing PagesController#authentification (for 0.0.0.0 at 2010-07-16 01:04:38) [GET]
->>>>>>> 5cbf325b3c0d41f5d8d454b0e5b3c3fed1e19cd3
 Rendering pages/authentification
 Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/authentification]
 
 
-<<<<<<< HEAD
-Processing PagesController#infos_facturation_mois_dernier (for 0.0.0.0 at 2010-07-16 09:28:28) [GET]
-  [4;36;1mClient Load (0.7ms)[0m   [0;1mSELECT * FROM "clients" [0m
-Rendering pages/infos_facturation_mois_dernier
-Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/pages/infos_facturation_mois_dernier]
-
-
-Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-16 09:28:28) [GET]
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT * FROM "clients" [0m
-Rendering pages/infos_facturation
-Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
-  [4;36;1mClient Load (0.8ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (0.4ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.1ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-  [4;36;1mClient Load (0.3ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;35;1mClient Load (0.3ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics' AND "clients".id <> 980190962) LIMIT 1[0m
-  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = '') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
-  [4;36;1mClient Load (0.1ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'General Electrics') LIMIT 1[0m
-  [4;35;1mClient Load (0.2ms)[0m   [0mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" IS NULL) LIMIT 1[0m
-  [4;36;1mClient Load (0.2ms)[0m   [0;1mSELECT "clients".id FROM "clients" WHERE ("clients"."nom" = 'Apple') LIMIT 1[0m
-=======
 Processing PagesController#infos_facturation_mois_dernier (for 0.0.0.0 at 2010-07-16 01:04:38) [GET]
   [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
 Rendering pages/infos_facturation_mois_dernier
@@ -1592,4 +1456,1835 @@ Processing PagesController#infos_facturation (for 0.0.0.0 at 2010-07-16 01:04:38
   [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" [0m
 Rendering pages/infos_facturation
 Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/pages/infos_facturation]
->>>>>>> 5cbf325b3c0d41f5d8d454b0e5b3c3fed1e19cd3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 11:27:17) [POST]
+  Parameters: {"client"=>{}}
+  [4;35;1mClient Create (1.0ms)[0m   [0mINSERT INTO "clients" ("nom", "updated_at", "infos_projets", "client_ce_mois", "description", "created_at") VALUES(NULL, '2010-07-18 09:27:17', NULL, NULL, NULL, '2010-07-18 09:27:17')[0m
+Redirected to http://test.host/clients/980190963
+Completed in 9ms (DB: 2) | 302 Found [http://test.host/clients?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 11:27:17) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Destroy (1.0ms)[0m   [0;1mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/clients/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 11:27:17) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 24ms (View: 23, DB: 0) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 11:27:17) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 11:27:17) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 11:27:17) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/clients/980190962]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 11:27:17) [PUT]
+  Parameters: {"client"=>{}, "id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/clients/980190962?]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 11:35:45) [POST]
+  Parameters: {"client"=>{}}
+  [4;35;1mClient Create (1.0ms)[0m   [0mINSERT INTO "clients" ("nom", "updated_at", "infos_projets", "client_ce_mois", "description", "created_at") VALUES(NULL, '2010-07-18 09:35:45', NULL, NULL, NULL, '2010-07-18 09:35:45')[0m
+Redirected to http://test.host/clients/980190963
+Completed in 10ms (DB: 4) | 302 Found [http://test.host/clients?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 11:35:45) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Destroy (1.0ms)[0m   [0;1mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/clients/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 11:35:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 20ms (View: 18, DB: 1) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 11:35:45) [GET]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 11:35:45) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 11:35:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/clients/980190962]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 11:35:45) [PUT]
+  Parameters: {"client"=>{}, "id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/clients/980190962?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 11:35:45) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Create (1.0ms)[0m   [0;1mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "nom_developpeur", "validation_nb_jours_travail", "created_at") VALUES('2010-07-18 09:35:45', NULL, NULL, NULL, NULL, '2010-07-18 09:35:45')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 11:35:45) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;35;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 11:35:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 11:35:45) [GET]
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 11:35:45) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 11:35:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 11:35:45) [PUT]
+  Parameters: {"id"=>"980190962", "travail_developpeur"=>{}}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 11:42:37) [POST]
+  Parameters: {"client"=>{}}
+  [4;35;1mClient Create (1.0ms)[0m   [0mINSERT INTO "clients" ("nom", "updated_at", "infos_projets", "client_ce_mois", "description", "created_at") VALUES(NULL, '2010-07-18 09:42:37', NULL, NULL, NULL, '2010-07-18 09:42:37')[0m
+Redirected to http://test.host/clients/980190963
+Completed in 9ms (DB: 4) | 302 Found [http://test.host/clients?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 11:42:37) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Destroy (1.0ms)[0m   [0;1mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/clients/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 19ms (View: 18, DB: 1) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 4ms (View: 3, DB: 2) | 200 OK [http://test.host/clients/980190962]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 11:42:37) [PUT]
+  Parameters: {"client"=>{}, "id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/clients/980190962?]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 11:42:37) [POST]
+  Parameters: {"facturation"=>{}}
+Exception occurred during reader method compilation.
+Maybe etat_valide? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def etat_valide?=(new_value);write_attribute('etat_valide?', new_value);end
+                ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def etat_valide?=(new_value);write_attribute('etat_valide?', new_value);end
+                                                                           ^
+Exception occurred during reader method compilation.
+Maybe etat_valide? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def etat_valide??; query_attribute('etat_valide?'); end
+                 ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def etat_valide??; query_attribute('etat_valide?'); end
+                                                       ^
+Exception occurred during reader method compilation.
+Maybe facturation_envoyee? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def facturation_envoyee?=(new_value);write_attribute('facturation_envoyee?', new_value);end
+                        ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def facturation_envoyee?=(new_value);write_attribute('facturation_envoyee?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe facturation_envoyee? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def facturation_envoyee??; query_attribute('facturation_envoyee?'); end
+                         ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def facturation_envoyee??; query_attribute('facturation_envoyee?'); end
+                                                                       ^
+  [4;36;1mFacturation Create (1.0ms)[0m   [0;1mINSERT INTO "facturations" ("date_archivage", "updated_at", "etat_valide?", "nb_heures_a_facturer", "facturation_envoyee?", "liste_dev_attente_validation", "created_at") VALUES(NULL, '2010-07-18 09:42:37', NULL, NULL, NULL, NULL, '2010-07-18 09:42:37')[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 12ms (DB: 2) | 302 Found [http://test.host/facturations?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 11:42:37) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;35;1mFacturation Destroy (1.0ms)[0m   [0mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/facturations/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 55ms (View: 53, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/facturations/980190962]
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 11:42:37) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/facturations/980190962?]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 11:42:37) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+  [4;35;1mTravailDeveloppeur Create (1.0ms)[0m   [0mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "nom_developpeur", "validation_nb_jours_travail", "created_at") VALUES('2010-07-18 09:42:37', NULL, NULL, NULL, NULL, '2010-07-18 09:42:37')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 8ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 11:42:37) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;36;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0;1mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 12ms (View: 11, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 11:42:37) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 11:42:37) [PUT]
+  Parameters: {"id"=>"980190962", "travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 12:16:32) [POST]
+  Parameters: {"client"=>{}}
+Exception occurred during reader method compilation.
+Maybe client_ce_mois? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def client_ce_mois?=(new_value);write_attribute('client_ce_mois?', new_value);end
+                   ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def client_ce_mois?=(new_value);write_attribute('client_ce_mois?', new_value);end
+                                                                                 ^
+Exception occurred during reader method compilation.
+Maybe client_ce_mois? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def client_ce_mois??; query_attribute('client_ce_mois?'); end
+                    ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def client_ce_mois??; query_attribute('client_ce_mois?'); end
+                                                             ^
+  [4;35;1mClient Create (1.0ms)[0m   [0mINSERT INTO "clients" ("nom", "updated_at", "infos_projets", "description", "created_at", "client_ce_mois?") VALUES(NULL, '2010-07-18 10:16:32', NULL, NULL, '2010-07-18 10:16:32', NULL)[0m
+Redirected to http://test.host/clients/980190963
+Completed in 9ms (DB: 4) | 302 Found [http://test.host/clients?]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 12:16:32) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;36;1mClient Destroy (1.0ms)[0m   [0;1mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/clients/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 12:16:32) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 19ms (View: 18, DB: 1) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 12:16:32) [GET]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 12:16:32) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 12:16:32) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/clients/980190962]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 12:16:32) [PUT]
+  Parameters: {"client"=>{}, "id"=>"980190962"}
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/clients/980190962?]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 12:16:32) [POST]
+  Parameters: {"facturation"=>{}}
+Exception occurred during reader method compilation.
+Maybe etat_valide? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def etat_valide?=(new_value);write_attribute('etat_valide?', new_value);end
+                ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def etat_valide?=(new_value);write_attribute('etat_valide?', new_value);end
+                                                                           ^
+Exception occurred during reader method compilation.
+Maybe etat_valide? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def etat_valide??; query_attribute('etat_valide?'); end
+                 ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def etat_valide??; query_attribute('etat_valide?'); end
+                                                       ^
+Exception occurred during reader method compilation.
+Maybe facturation_envoyee? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def facturation_envoyee?=(new_value);write_attribute('facturation_envoyee?', new_value);end
+                        ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def facturation_envoyee?=(new_value);write_attribute('facturation_envoyee?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe facturation_envoyee? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def facturation_envoyee??; query_attribute('facturation_envoyee?'); end
+                         ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def facturation_envoyee??; query_attribute('facturation_envoyee?'); end
+                                                                       ^
+  [4;36;1mFacturation Create (2.0ms)[0m   [0;1mINSERT INTO "facturations" ("date_archivage", "updated_at", "etat_valide?", "nb_heures_a_facturer", "facturation_envoyee?", "liste_dev_attente_validation", "created_at") VALUES(NULL, '2010-07-18 10:16:32', NULL, NULL, NULL, NULL, '2010-07-18 10:16:32')[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 11ms (DB: 3) | 302 Found [http://test.host/facturations?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 12:16:32) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;35;1mFacturation Destroy (1.0ms)[0m   [0mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/facturations/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 12:16:32) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 12:16:32) [GET]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 12:16:32) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 22ms (View: 22, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 12:16:32) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/facturations/980190962]
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 12:16:33) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/facturations/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 12:16:33) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+Exception occurred during reader method compilation.
+Maybe validation_nb_jours_travail? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def validation_nb_jours_travail?=(new_value);write_attribute('validation_nb_jours_travail?', new_value);end
+                                ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def validation_nb_jours_travail?=(new_value);write_attribute('validation_nb_jours_travail?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe validation_nb_jours_travail? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def validation_nb_jours_travail??; query_attribute('validation_nb_jours_travail?'); end
+                                 ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def validation_nb_jours_travail??; query_attribute('validation_nb_jours_travail?'); end
+                                                                                       ^
+  [4;35;1mTravailDeveloppeur Create (2.0ms)[0m   [0mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "validation_nb_jours_travail?", "nom_developpeur", "created_at") VALUES('2010-07-18 10:16:33', NULL, NULL, NULL, NULL, '2010-07-18 10:16:33')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 9ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 12:16:33) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;36;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0;1mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 12:16:33) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 12ms (View: 11, DB: 2) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 12:16:33) [GET]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 12:16:33) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 12:16:33) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 4ms (View: 3, DB: 2) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 12:16:33) [PUT]
+  Parameters: {"id"=>"980190962", "travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 13:15:30) [POST]
+  Parameters: {"client"=>{}}
+Exception occurred during reader method compilation.
+Maybe client_ce_mois? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def client_ce_mois?=(new_value);write_attribute('client_ce_mois?', new_value);end
+                   ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def client_ce_mois?=(new_value);write_attribute('client_ce_mois?', new_value);end
+                                                                                 ^
+Exception occurred during reader method compilation.
+Maybe client_ce_mois? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def client_ce_mois??; query_attribute('client_ce_mois?'); end
+                    ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def client_ce_mois??; query_attribute('client_ce_mois?'); end
+                                                             ^
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 31ms (View: 24, DB: 2) | 200 OK [http://test.host/clients?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 13:15:30) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Destroy (1.0ms)[0m   [0mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/clients/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 13:15:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 13:15:30) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 13:15:30) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 13:15:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/clients/980190962]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 13:15:30) [PUT]
+  Parameters: {"client"=>{}, "id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/clients/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 13:15:30) [POST]
+  Parameters: {"facturation"=>{}}
+Exception occurred during reader method compilation.
+Maybe etat_valide? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def etat_valide?=(new_value);write_attribute('etat_valide?', new_value);end
+                ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def etat_valide?=(new_value);write_attribute('etat_valide?', new_value);end
+                                                                           ^
+Exception occurred during reader method compilation.
+Maybe etat_valide? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def etat_valide??; query_attribute('etat_valide?'); end
+                 ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def etat_valide??; query_attribute('etat_valide?'); end
+                                                       ^
+Exception occurred during reader method compilation.
+Maybe facturation_envoyee? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def facturation_envoyee?=(new_value);write_attribute('facturation_envoyee?', new_value);end
+                        ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def facturation_envoyee?=(new_value);write_attribute('facturation_envoyee?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe facturation_envoyee? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def facturation_envoyee??; query_attribute('facturation_envoyee?'); end
+                         ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def facturation_envoyee??; query_attribute('facturation_envoyee?'); end
+                                                                       ^
+  [4;35;1mFacturation Create (1.0ms)[0m   [0mINSERT INTO "facturations" ("date_archivage", "updated_at", "etat_valide?", "nb_heures_a_facturer", "facturation_envoyee?", "liste_dev_attente_validation", "created_at") VALUES(NULL, '2010-07-18 11:15:30', NULL, NULL, NULL, NULL, '2010-07-18 11:15:30')[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 10ms (DB: 1) | 302 Found [http://test.host/facturations?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 13:15:30) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;36;1mFacturation Destroy (1.0ms)[0m   [0;1mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/facturations/980190962]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 13:15:30) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 15ms (View: 14, DB: 2) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 13:15:30) [GET]
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 10ms (View: 9, DB: 1) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 13:15:30) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 13:15:31) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/facturations/980190962]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 13:15:31) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/facturations/980190962?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 13:15:31) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+Exception occurred during reader method compilation.
+Maybe validation_nb_jours_travail? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def validation_nb_jours_travail?=(new_value);write_attribute('validation_nb_jours_travail?', new_value);end
+                                ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def validation_nb_jours_travail?=(new_value);write_attribute('validation_nb_jours_travail?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe validation_nb_jours_travail? is not a valid Ruby identifier?
+compile error
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected '?', expecting '\n' or ';'
+def validation_nb_jours_travail??; query_attribute('validation_nb_jours_travail?'); end
+                                 ^
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/attribute_methods.rb:1: syntax error, unexpected kEND, expecting $end
+def validation_nb_jours_travail??; query_attribute('validation_nb_jours_travail?'); end
+                                                                                       ^
+  [4;36;1mTravailDeveloppeur Create (1.0ms)[0m   [0;1mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "validation_nb_jours_travail?", "nom_developpeur", "created_at") VALUES('2010-07-18 11:15:31', NULL, NULL, NULL, NULL, '2010-07-18 11:15:31')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 9ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 13:15:31) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;35;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 13:15:31) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 13ms (View: 12, DB: 2) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 13:15:31) [GET]
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 13:15:31) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 82ms (View: 82, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 13:15:31) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 13:15:31) [PUT]
+  Parameters: {"id"=>"980190962", "travail_developpeur"=>{}}
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 13:30:21) [POST]
+  Parameters: {"client"=>{}}
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 30ms (View: 24, DB: 4) | 200 OK [http://test.host/clients?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 13:30:21) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Destroy (1.0ms)[0m   [0mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/clients/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/clients/980190962]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 13:30:21) [PUT]
+  Parameters: {"client"=>{}, "id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/clients/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 13:30:21) [POST]
+  Parameters: {"facturation"=>{}}
+  [4;35;1mFacturation Create (1.0ms)[0m   [0mINSERT INTO "facturations" ("date_archivage", "updated_at", "nb_heures_a_facturer", "facturation_envoyee", "liste_dev_attente_validation", "created_at", "etat_valide") VALUES(NULL, '2010-07-18 11:30:21', NULL, NULL, NULL, '2010-07-18 11:30:21', NULL)[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/facturations?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 13:30:21) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;36;1mFacturation Destroy (1.0ms)[0m   [0;1mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 3ms (DB: 3) | 302 Found [http://test.host/facturations/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 16ms (View: 14, DB: 1) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 23ms (View: 22, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://test.host/facturations/980190962]
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 13:30:21) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/facturations/980190962?]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 13:30:21) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Create (1.0ms)[0m   [0;1mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "nom_developpeur", "validation_nb_jours_travail", "created_at") VALUES('2010-07-18 11:30:21', NULL, NULL, NULL, NULL, '2010-07-18 11:30:21')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 8ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 13:30:21) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;35;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 12ms (View: 11, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 13:30:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 78ms (View: 3, DB: 2) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 13:30:21) [PUT]
+  Parameters: {"id"=>"980190962", "travail_developpeur"=>{}}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 13:40:21) [POST]
+  Parameters: {"client"=>{}}
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 29ms (View: 23, DB: 3) | 200 OK [http://test.host/clients?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 13:40:21) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Destroy (1.0ms)[0m   [0mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/clients/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 13:40:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 13:40:21) [GET]
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 13:40:21) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 13:40:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/clients/980190962]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 13:40:21) [PUT]
+  Parameters: {"client"=>{}, "id"=>"980190962"}
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/clients/980190962?]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 13:40:21) [POST]
+  Parameters: {"facturation"=>{}}
+  [4;35;1mFacturation Create (1.0ms)[0m   [0mINSERT INTO "facturations" ("date_archivage", "updated_at", "nb_heures_a_facturer", "facturation_envoyee", "liste_dev_attente_validation", "created_at", "etat_valide") VALUES(NULL, '2010-07-18 11:40:21', NULL, NULL, NULL, '2010-07-18 11:40:21', NULL)[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 9ms (DB: 2) | 302 Found [http://test.host/facturations?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 13:40:21) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;36;1mFacturation Destroy (1.0ms)[0m   [0;1mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/facturations/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 13:40:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 13:40:21) [GET]
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 10ms (View: 9, DB: 1) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 13:40:21) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 22ms (View: 21, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 13:40:21) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/facturations/980190962]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 13:40:21) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/facturations/980190962?]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 13:40:21) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Create (1.0ms)[0m   [0;1mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "nom_developpeur", "validation_nb_jours_travail", "created_at") VALUES('2010-07-18 11:40:21', NULL, NULL, NULL, NULL, '2010-07-18 11:40:21')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 8ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 13:40:21) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;35;1mTravailDeveloppeur Destroy (2.0ms)[0m   [0mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 13:40:22) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 13:40:22) [GET]
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 13:40:22) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 13:40:22) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 79ms (View: 3, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 13:40:22) [PUT]
+  Parameters: {"id"=>"980190962", "travail_developpeur"=>{}}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 13:46:15) [POST]
+  Parameters: {"facturation"=>{}}
+  [4;35;1mFacturation Create (2.0ms)[0m   [0mINSERT INTO "facturations" ("date_archivage", "updated_at", "nb_heures_a_facturer", "facturation_envoyee", "liste_dev_attente_validation", "created_at", "etat_valide") VALUES(NULL, '2010-07-18 11:46:15', NULL, NULL, NULL, '2010-07-18 11:46:15', NULL)[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 9ms (DB: 4) | 302 Found [http://test.host/facturations?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 13:46:15) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;36;1mFacturation Destroy (1.0ms)[0m   [0;1mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/facturations/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 13:46:15) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 24ms (View: 23, DB: 1) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 13:46:15) [GET]
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 13:46:15) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 22ms (View: 22, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 13:46:15) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 5ms (View: 4, DB: 1) | 200 OK [http://test.host/facturations/980190962]
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 13:46:15) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/facturations/980190962?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 13:46:15) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Create (1.0ms)[0m   [0;1mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "nom_developpeur", "validation_nb_jours_travail", "created_at") VALUES('2010-07-18 11:46:15', NULL, NULL, NULL, NULL, '2010-07-18 11:46:15')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 13:46:15) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;35;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 13:46:15) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 13:46:15) [GET]
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 13:46:15) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 13:46:15) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 13:46:15) [PUT]
+  Parameters: {"travail_developpeur"=>{}, "id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 13:48:08) [POST]
+  Parameters: {"facturation"=>{}}
+  [4;35;1mFacturation Create (1.0ms)[0m   [0mINSERT INTO "facturations" ("date_archivage", "updated_at", "nb_heures_a_facturer", "facturation_envoyee", "liste_dev_attente_validation", "created_at", "etat_valide") VALUES(NULL, '2010-07-18 11:48:08', NULL, NULL, NULL, '2010-07-18 11:48:08', NULL)[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 10ms (DB: 3) | 302 Found [http://test.host/facturations?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 13:48:09) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;36;1mFacturation Destroy (1.0ms)[0m   [0;1mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/facturations/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 13:48:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 13:48:09) [GET]
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 13:48:09) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 22ms (View: 21, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 13:48:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://test.host/facturations/980190962]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 13:48:09) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/facturations/980190962?]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 13:48:09) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Create (1.0ms)[0m   [0;1mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "nom_developpeur", "validation_nb_jours_travail", "created_at") VALUES('2010-07-18 11:48:09', NULL, NULL, NULL, NULL, '2010-07-18 11:48:09')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 9ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 13:48:09) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;35;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 13:48:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 13:48:09) [GET]
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 13:48:09) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 13:48:09) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 13:48:09) [PUT]
+  Parameters: {"travail_developpeur"=>{}, "id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 13:51:19) [POST]
+  Parameters: {"client"=>nil}
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 29ms (View: 23, DB: 5) | 200 OK [http://test.host/clients]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 13:51:19) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Destroy (1.0ms)[0m   [0mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 3ms (DB: 3) | 302 Found [http://test.host/clients/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/clients/980190962]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 13:51:19) [PUT]
+  Parameters: {"client"=>nil, "id"=>"980190962"}
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 3ms (DB: 1) | 302 Found [http://test.host/clients/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 13:51:19) [POST]
+  Parameters: {"facturation"=>{}}
+  [4;35;1mFacturation Create (1.0ms)[0m   [0mINSERT INTO "facturations" ("date_archivage", "updated_at", "nb_heures_a_facturer", "facturation_envoyee", "liste_dev_attente_validation", "created_at", "etat_valide") VALUES(NULL, '2010-07-18 11:51:19', NULL, NULL, NULL, '2010-07-18 11:51:19', NULL)[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 8ms (DB: 1) | 302 Found [http://test.host/facturations?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 13:51:19) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;36;1mFacturation Destroy (1.0ms)[0m   [0;1mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/facturations/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 16ms (View: 15, DB: 1) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 6ms (View: 4, DB: 1) | 200 OK [http://test.host/facturations/980190962]
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 13:51:19) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/facturations/980190962?]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 13:51:19) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Create (1.0ms)[0m   [0;1mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "nom_developpeur", "validation_nb_jours_travail", "created_at") VALUES('2010-07-18 11:51:19', NULL, NULL, NULL, NULL, '2010-07-18 11:51:19')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 9ms (DB: 2) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 13:51:19) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;35;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (1.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 11ms (View: 10, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 13:51:19) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 13:51:19) [PUT]
+  Parameters: {"travail_developpeur"=>{}, "id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 5ms (DB: 0) | 302 Found [http://test.host/travail_developpeurs/980190962?]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+
+
+Processing ClientsController#create (for 0.0.0.0 at 2010-07-18 13:53:45) [POST]
+  Parameters: {"client"=>nil}
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 30ms (View: 24, DB: 2) | 200 OK [http://test.host/clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#destroy (for 0.0.0.0 at 2010-07-18 13:53:45) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+  [4;35;1mClient Destroy (1.0ms)[0m   [0mDELETE FROM "clients" WHERE "id" = 980190962[0m
+Redirected to http://test.host/clients
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/clients/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "clients" [0m
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#edit (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/edit
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/clients/980190962/edit]
+
+
+Processing ClientsController#index (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  [4;35;1mClient Load (0.0ms)[0m   [0mSELECT * FROM "clients" [0m
+Rendering template within layouts/clients
+Rendering clients/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/clients]
+
+
+Processing ClientsController#new (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+Rendering template within layouts/clients
+Rendering clients/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/clients/new]
+  [4;36;1mClient Load (0.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#show (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Rendering template within layouts/clients
+Rendering clients/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://test.host/clients/980190962]
+  [4;36;1mClient Load (1.0ms)[0m   [0;1mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+
+
+Processing ClientsController#update (for 0.0.0.0 at 2010-07-18 13:53:45) [PUT]
+  Parameters: {"client"=>nil, "id"=>"980190962"}
+  [4;35;1mClient Load (1.0ms)[0m   [0mSELECT * FROM "clients" WHERE ("clients"."id" = 980190962) [0m
+Redirected to http://test.host/clients/980190962
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/clients/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+
+
+Processing FacturationsController#create (for 0.0.0.0 at 2010-07-18 13:53:45) [POST]
+  Parameters: {"facturation"=>{}}
+  [4;35;1mFacturation Create (2.0ms)[0m   [0mINSERT INTO "facturations" ("date_archivage", "updated_at", "nb_heures_a_facturer", "facturation_envoyee", "liste_dev_attente_validation", "created_at", "etat_valide") VALUES(NULL, '2010-07-18 11:53:45', NULL, NULL, NULL, '2010-07-18 11:53:45', NULL)[0m
+Redirected to http://test.host/facturations/980190963
+Completed in 9ms (DB: 2) | 302 Found [http://test.host/facturations?]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#destroy (for 0.0.0.0 at 2010-07-18 13:53:45) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+  [4;36;1mFacturation Destroy (2.0ms)[0m   [0;1mDELETE FROM "facturations" WHERE "id" = 980190962[0m
+Redirected to http://test.host/facturations
+Completed in 4ms (DB: 3) | 302 Found [http://test.host/facturations/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "facturations" [0m
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#edit (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/edit
+Completed in 17ms (View: 14, DB: 2) | 200 OK [http://test.host/facturations/980190962/edit]
+
+
+Processing FacturationsController#index (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  [4;36;1mFacturation Load (1.0ms)[0m   [0;1mSELECT * FROM "facturations" [0m
+Rendering template within layouts/facturations
+Rendering facturations/index
+Completed in 10ms (View: 8, DB: 1) | 200 OK [http://test.host/facturations]
+
+
+Processing FacturationsController#new (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+Rendering template within layouts/facturations
+Rendering facturations/new
+Completed in 22ms (View: 22, DB: 0) | 200 OK [http://test.host/facturations/new]
+  [4;35;1mFacturation Load (1.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#show (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Rendering template within layouts/facturations
+Rendering facturations/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/facturations/980190962]
+  [4;35;1mFacturation Load (0.0ms)[0m   [0mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+
+
+Processing FacturationsController#update (for 0.0.0.0 at 2010-07-18 13:53:45) [PUT]
+  Parameters: {"facturation"=>{}, "id"=>"980190962"}
+  [4;36;1mFacturation Load (0.0ms)[0m   [0;1mSELECT * FROM "facturations" WHERE ("facturations"."id" = 980190962) [0m
+Redirected to http://test.host/facturations/980190962
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/facturations/980190962?]
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+
+
+Processing TravailDeveloppeursController#create (for 0.0.0.0 at 2010-07-18 13:53:45) [POST]
+  Parameters: {"travail_developpeur"=>{}}
+  [4;36;1mTravailDeveloppeur Create (2.0ms)[0m   [0;1mINSERT INTO "travail_developpeurs" ("updated_at", "nb_jours_travail", "client", "nom_developpeur", "validation_nb_jours_travail", "created_at") VALUES('2010-07-18 11:53:45', NULL, NULL, NULL, NULL, '2010-07-18 11:53:45')[0m
+Redirected to http://test.host/travail_developpeurs/980190963
+Completed in 9ms (DB: 3) | 302 Found [http://test.host/travail_developpeurs?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#destroy (for 0.0.0.0 at 2010-07-18 13:53:45) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (0.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+  [4;35;1mTravailDeveloppeur Destroy (1.0ms)[0m   [0mDELETE FROM "travail_developpeurs" WHERE "id" = 980190962[0m
+Redirected to http://test.host/travail_developpeurs
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "travail_developpeurs" [0m
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#edit (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/edit
+Completed in 12ms (View: 11, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962/edit]
+
+
+Processing TravailDeveloppeursController#index (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://test.host/travail_developpeurs]
+
+
+Processing TravailDeveloppeursController#new (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/new
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/travail_developpeurs/new]
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#show (for 0.0.0.0 at 2010-07-18 13:53:45) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Rendering template within layouts/travail_developpeurs
+Rendering travail_developpeurs/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://test.host/travail_developpeurs/980190962]
+  [4;36;1mTravailDeveloppeur Load (1.0ms)[0m   [0;1mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+
+
+Processing TravailDeveloppeursController#update (for 0.0.0.0 at 2010-07-18 13:53:45) [PUT]
+  Parameters: {"travail_developpeur"=>{}, "id"=>"980190962"}
+  [4;35;1mTravailDeveloppeur Load (0.0ms)[0m   [0mSELECT * FROM "travail_developpeurs" WHERE ("travail_developpeurs"."id" = 980190962) [0m
+Redirected to http://test.host/travail_developpeurs/980190962
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/travail_developpeurs/980190962?]

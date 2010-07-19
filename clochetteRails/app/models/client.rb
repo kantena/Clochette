@@ -1,8 +1,8 @@
-
 class Client < ActiveRecord::Base
-  validates_presence_of :nom
-  validates_uniqueness_of :nom
-  validates_numericality_of :jours_a_facturer_mois_courant
-  validates_inclusion_of :jours_a_facturer_mois_courant, :in => (0..31)
+  default_scope :order => 'nom'
+  
+  validates_presence_of :nom, :message => "ne peut etre vide"
+  validates_presence_of :infos_projets ,:message => "doit au moins contenir le nom d'un projet sur lequel Kantena est en relation avec le client"
 
+  validates_uniqueness_of :nom
 end

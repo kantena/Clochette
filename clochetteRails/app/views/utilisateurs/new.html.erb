@@ -1,0 +1,19 @@
+﻿<h1>Nouvel utilisateur</h1>
+
+<% form_for(@utilisateur) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.submit 'Créer' %>
+  </p>
+<% end %>
+
+<%= link_to 'Retour', utilisateurs_path %>

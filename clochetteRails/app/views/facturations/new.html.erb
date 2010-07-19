@@ -1,0 +1,41 @@
+﻿<h1>Nouvelle facture</h1>
+
+<% form_for(@facturation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :date_creation %><br />
+    <%= f.date_select :date_creation %>
+  </p>
+  <p>
+    <%= f.label :client %><br />
+    <%= f.text_field :client %>
+  </p>
+  <p>
+    <%= f.label :nb_jours_a_facturer %><br />
+    <%= f.text_field :nb_jours_a_facturer %>
+  </p>
+    <p>
+    <%= f.label "liste_des_développeurs_travaillant_pour_le_client"%><br />
+    <%= f.text_area :liste_dev_attente_validation, :rows => 8 %>
+  </p>
+  <p>
+    <%= f.label :etat_valide? %><br />
+    <%= f.check_box :etat_valide %>
+  </p>
+  <p>
+    <%= f.label :facturation_envoyee? %><br />
+    <%= f.check_box :facturation_envoyee %>
+  </p>
+
+  <p>
+    <%= f.label :date_archivage %><br />
+    <%= f.date_select :date_archivage %>
+  </p>
+
+  <p>
+    <%= f.submit 'Créer' %>
+  </p>
+<% end %>
+
+<%= link_to 'Retour', facturations_path %>

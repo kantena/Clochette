@@ -1,0 +1,13 @@
+<p>
+  <b>Login:</b>
+  <%=h @utilisateur.login %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @utilisateur.password %>
+</p>
+
+
+<%= link_to 'Edition', edit_utilisateur_path(@utilisateur) %> |
+<%= link_to 'Retour', utilisateurs_path %>

@@ -1,0 +1,38 @@
+﻿<div id="liste_facturations">
+<h1>Liste des facturations</h1>
+
+<table border width="1000">
+<thead>
+  <tr>
+    <th>Client</th>
+    <th>Date creation</th>
+    <th>Nb jours a facturer</th>
+    <th>Etat valide?</th>
+    <th>Facturation envoyee?</th>
+    <th>Liste dev attente validation</th>
+    <th>Date archivage</th>
+    <th colspan=3>Actions</th>
+  </tr>
+  </thead>
+
+<tbody>
+<% @facturations.each do |facturation| %>
+  <tr>
+    <td><%=h facturation.client %></td>
+    <td><%=h facturation.date_creation %></td>
+    <td><%=h facturation.nb_jours_a_facturer %></td>
+    <td><%=h facturation.etat_valide %></td>
+    <td><%=h facturation.facturation_envoyee %></td>
+    <td><%=h facturation.liste_dev_attente_validation %></td>
+    <td><%=h facturation.date_archivage %></td>
+    <td><%= link_to 'Détails', facturation %></td>
+    <td><%= link_to 'Edition', edit_facturation_path(facturation) %></td>
+    <td><%= link_to 'Supprimer', facturation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to "Enregistrement d'une nouvelle facture", new_facturation_path %>

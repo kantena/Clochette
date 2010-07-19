@@ -1,14 +1,12 @@
-
 require 'spec_helper'
 
 #PagesControlleur est le controlleur en charge de l'affichage des pages dynamiques de l'application
 describe PagesController do
   integrate_views
-
+  
   it "should use PagesController" do
     controller.should be_an_instance_of(PagesController)
   end
-  
   
   describe "#infos_facturation" do
     #tests controlleur pour la page infos_facturation

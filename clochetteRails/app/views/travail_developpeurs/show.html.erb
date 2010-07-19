@@ -1,0 +1,32 @@
+﻿<p>
+  <b>Client:</b>
+  <%=h @travail_developpeur.client %>
+</p>
+
+<p>
+  <b>Nom developpeur:</b>
+  <%=h @travail_developpeur.nom_developpeur %>
+</p>
+
+<p>
+  <b>Nb jours travail:</b>
+  <%=h @travail_developpeur.nb_jours_travail %>
+</p>
+
+<p>
+  <b>Validation nb jours travail ?:</b>
+  <%=h @travail_developpeur.validation_nb_jours_travail %>
+</p>
+
+<p>
+  <b>Mois:</b>
+  <%=h @travail_developpeur.mois %>
+</p>
+
+<p>
+  <b>Annee:</b>
+  <%=h @travail_developpeur.annee %>
+</p>
+
+<%= link_to 'Edition', edit_travail_developpeur_path(@travail_developpeur) %> |
+<%= link_to 'Retour', travail_developpeurs_path %>
