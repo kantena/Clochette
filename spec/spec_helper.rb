@@ -7,7 +7,9 @@ require 'spec/autorun'
 require 'spec/rails'
 require 'spec/test/unit'
 require 'mocha'
-#require 'factory_girl'
+require 'shoulda'
+require 'factory_girl'
+require 'factories'
 
 # Uncomment the next line to use webrat's matchers
 #require 'webrat/integrations/rspec-rails'
