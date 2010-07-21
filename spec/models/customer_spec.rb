@@ -30,10 +30,5 @@ describe Customer do
       Factory(:activity_note, :customer => c2, :developper => dev2, :working_days => 8)
     client = Factory(:customer, :activities => [act1, act2])
     assert_equal 18, client.total_working_days
-
-  act1, act2 = Factory(:activity_note, :customer => c1, :developper => dev1, :working_days => 1),\
-      Factory(:activity_note, :customer => c2, :developper => dev2, :working_days => 2)
-    client = Factory(:customer, :activities => [act1, act2])
-    assert_equal 3, client.total_working_days
   end
 end
