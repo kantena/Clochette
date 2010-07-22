@@ -1,4 +1,4 @@
-﻿<!DOCTYPE  html>
+<!DOCTYPE  html>
 <html>
   <head>
     <title> <%= @page_title || "Clochette" %> </title>
@@ -6,7 +6,18 @@
   </head>
 
   <body>
-    <%=  yield  %>
+
+    <div id="banner">
+      <tr> <%= image_tag("logo_kantena.gif") %> </tr>
+      <tr> <%= @page_title || "Clochette" %> </tr>
+    </div>
+    <div id="quick_links">
+      <%= 'Liens rapides :   '%>
+      <a href="activity_notes">Modification CRA</a>
+    </div>
+    <div id="main">
+      <%=  yield  %>
+    </div>
   </body>
 
 </html>
