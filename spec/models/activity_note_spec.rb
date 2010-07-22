@@ -7,7 +7,7 @@ describe ActivityNote do
       :customer_id => 1,
       :developper_id => 1,
       :working_days => 10,
-      :month => 06,
+      :month => 6,
       :year => 2010
     }
 
@@ -28,24 +28,20 @@ describe ActivityNote do
   end
 
   it "should expect a month among 1 and 12" do
-    begin
-      Factory(:activity_note, :month => -1)
-      Factory(:activity_note, :month => 13)
-    rescue
-      assert true
-    else
-      assert false
+    assert_raise(ActiveRecord::RecordInvalid) do
+      ActivityNote.create!(:month => 0)
+    end
+    assert_raise(ActiveRecord::RecordInvalid) do
+      ActivityNote.create!(:month => 13)
     end
   end
 
   it "should expect a year less than current year" do
-    begin
-      Factory(:activity_note, :year => -2000)
-      Factory(:activity_note, :year => 2300)
-    rescue
-      assert true
-    else
-      assert false
+    assert_raise(ActiveRecord::RecordInvalid) do
+      ActivityNote.create!(:year => -2000)
+    end
+    assert_raise(ActiveRecord::RecordInvalid) do
+      ActivityNote.create!(:year => 2040)
     end
   end
 

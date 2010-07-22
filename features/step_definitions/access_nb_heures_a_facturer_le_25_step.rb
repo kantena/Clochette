@@ -1,9 +1,5 @@
-Soit /^Nicolas ayant déclarer (\d+) jours de travail pour le client "([^"]*)"$/ do |nb_jours_travail, client|
-  build_releve_activite 'Nicolas', nb_jours_travail, client
-end
-
-Soit /^Philippe ayant déclarer (\d+) jours de travail pour le client "([^"]*)"$/ do |nb_jours_travail, client|
-  build_releve_activite 'Philippe', nb_jours_travail, client
+Soit /^([^ ]*) ayant déclarer (\d+) jours de travail pour le client "([^"]*)"$/ do |dev_name, nb_jours_travail, client|
+  build_releve_activite dev_name, nb_jours_travail, client
 end
 
 Lorsque /^l'on va sur la page d'acceuil$/ do
@@ -35,7 +31,7 @@ end
 
 
 def build_releve_activite dev, jours, client, mois=7, annee=2010
-  customer = Factory(:customer, :name => client) if Customer.find_by_name(client) == nil
-  developper = Factory(:kantenien, :name => dev) if Developper.find_by_name(dev) == nil
+  customer = Factory(:customer, :name => client) unless Customer.find_by_name(client)
+  developper = Factory(:kantenien, :name => dev) unless Developper.find_by_name(dev)
   Factory(:activity_note, :customer => customer, :developper => developper, :working_days => jours ,:month => mois, :year => annee)
 end

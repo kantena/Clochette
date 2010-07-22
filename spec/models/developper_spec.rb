@@ -12,13 +12,11 @@ describe Developper do
   end
 
   it "should validate the uniqueness of a developper's name" do
-    begin
-      Factory(:kantenien, :name => 'robert')
-      Factory(:kantenien, :name => 'robert')
-    rescue
-      assert true
-    else
-      assert false
+    assert_nothing_raised do
+      Developper.create!(:name => 'robert')
+    end
+    assert_raise(ActiveRecord::RecordInvalid) do
+      Developper.create!(:name => 'robert')
     end
   end
 end

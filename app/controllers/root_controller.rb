@@ -1,6 +1,6 @@
 class RootController < ApplicationController
 
   def index
-    @customer = Customer.all
+    @customers = Customer.all
   end
 end
