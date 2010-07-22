@@ -12,8 +12,8 @@ end
 
 Alors /^on obtient pour le client "([^"]*)" (\d+) jours à facturer$/ do |nom_client, nb_jours_a_facturer|
   #TODO : tests de contenu de balise avec webrat
-#  response.should have_tag("td", :id => 'customer_name', :content => nom_client)
-#  response.should have_tag("td", :id => 'invoicing_days', :content => nb_jours_a_facturer)
+  assert response.body.include?(nom_client)
+  assert response.body.include?(nb_jours_a_facturer)
 end
 
 
@@ -29,7 +29,8 @@ end
 
 Alors /^on obtient pour le client "([^"]*)" (\d+) jours à facturer pour la date courante$/ do |nom_client, nb_jours_travail|
   #TODO : tests de contenu de balise avec webrat
-  response.should have_tag("p", :class => "info")
+  assert response.body.include?(nom_client)
+  assert response.body.include?(nb_jours_travail)
 end
 
 

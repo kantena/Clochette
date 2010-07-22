@@ -8,21 +8,8 @@
 
   <body>
 
-    <div id="banner">
-      <tr> <%= image_tag("logo_kantena.gif") %> </tr>
-      <tr> <%= @page_title || "Clochette" %> </tr>
-      <tr> <%= image_tag("rails.jpeg") %> </tr>
-      <tr> <%= image_tag("ruby.jpeg") %> </tr>
-    </div>
-    <div id="quick_links">
-      <%= 'Liens rapides :   '%>
-      <a href="root">Déconnection</a>
-      <a href="root">Home</a>
-      <a href="authentification">Changement utilisateur</a>
-    </div>
-    <div id="main">
-      <%=  yield  %>
-    </div>
+    <%=  yield  %>
+
   </body>
 
 </html>
