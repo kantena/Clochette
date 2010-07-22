@@ -30,6 +30,9 @@ class ActivityNotesController < ApplicationController
     activity_note.developper_id = 1
     activity_note.working_days = params[:activity_note][:working_days]
     activity_note.customer_id = params[:activity_note][:customer_id]
+    today = Date.today
+    activity_note.month = today.month.to_i
+    activity_note.year = today.year.to_i
     activity_note.save
     redirect_to :action => "index"
   end

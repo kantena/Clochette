@@ -6,12 +6,13 @@ describe ActivityNote do
     @valid_attributes = {
       :customer_id => 1,
       :developper_id => 1,
-      :working_days => 10
+      :working_days => 10,
+      :month => 6,
+      :year => 2010
     }
 
     c1, c2 = Factory(:customer, :name => 'Vinci'), Factory(:customer, :name => 'Cour des comptes')
-    dev1, dev2, dev3 = Factory(:kantenien, :name =>'nicolas'), \
-      Factory(:kantenien, :name => 'philippe'), Factory(:kantenien, :name => 'damien')
+    dev1, dev2, dev3 = Factory(:kantenien, :name =>'nicolas'), Factory(:kantenien, :name => 'philippe'), Factory(:kantenien, :name => 'damien')
 
     Factory(:activity_note, :customer => c1, :developper => dev2, :working_days => 10 )
     Factory(:activity_note, :customer => c1, :developper => dev3, :working_days => 5 )
@@ -24,8 +25,31 @@ describe ActivityNote do
   end
 
   it "should have a client" do
-    r = Factory(:activity_note)
-    assert_kind_of Customer, r.customer
+    activity_note = Factory(:activity_note)
+    assert_kind_of Customer, activity_note.customer
+  end
+
+  it "should have a Developper" do
+    activity_note = Factory(:activity_note)
+    assert_kind_of Developper, activity_note.developper
+  end
+
+  it "should expect a month among 1 and 12" do
+    assert_raise(ActiveRecord::RecordInvalid) do
+      ActivityNote.create!(:month => 0)
+    end
+    assert_raise(ActiveRecord::RecordInvalid) do
+      ActivityNote.create!(:month => 13)
+    end
+  end
+
+  it "should expect a year less than current year" do
+    assert_raise(ActiveRecord::RecordInvalid) do
+      ActivityNote.create!(:year => -2000)
+    end
+    assert_raise(ActiveRecord::RecordInvalid) do
+      ActivityNote.create!(:year => 2040)
+    end
   end
 
 end
