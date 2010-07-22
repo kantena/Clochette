@@ -6,16 +6,10 @@ describe ActivityNote do
     @valid_attributes = {
       :customer_id => 1,
       :developper_id => 1,
-      :working_days => 10
+      :working_days => 10,
+      :month => 06,
+      :year => 2010
     }
-
-    c1, c2 = Factory(:customer, :name => 'Vinci'), Factory(:customer, :name => 'Cour des comptes')
-    dev1, dev2, dev3 = Factory(:kantenien, :name =>'nicolas'), \
-      Factory(:kantenien, :name => 'philippe'), Factory(:kantenien, :name => 'damien')
-
-    record1 = Factory(:activity_note, :customer => c1, :developper => dev2, :working_days => 10 )
-    record2 = Factory(:activity_note, :customer => c1, :developper => dev3, :working_days => 5 )
-    record3 = Factory(:activity_note, :customer => c2, :developper => dev1, :working_days => 25 )
 
   end
 
@@ -24,8 +18,35 @@ describe ActivityNote do
   end
 
   it "should have a client" do
-    r = Factory(:activity_note)
-    assert_kind_of Customer, r.customer
+    activity_note = Factory(:activity_note)
+    assert_kind_of Customer, activity_note.customer
+  end
+
+  it "should have a Developper" do
+    activity_note = Factory(:activity_note)
+    assert_kind_of Developper, activity_note.developper
+  end
+
+  it "should expect a month among 1 and 12" do
+    begin
+      Factory(:activity_note, :month => -1)
+      Factory(:activity_note, :month => 13)
+    rescue
+      assert true
+    else
+      assert false
+    end
+  end
+
+  it "should expect a year less than current year" do
+    begin
+      Factory(:activity_note, :year => -2000)
+      Factory(:activity_note, :year => 2300)
+    rescue
+      assert true
+    else
+      assert false
+    end
   end
 
 end

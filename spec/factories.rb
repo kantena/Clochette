@@ -11,4 +11,6 @@ Factory.define :activity_note do |r|
   r.customer {|a| a.association(:customer)}
   r.developper {|a| a.association(:kantenien)}
   r.working_days 0
+  r.month 10
+  r.year 2010
 end

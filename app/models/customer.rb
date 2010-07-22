@@ -5,8 +5,18 @@ class Customer < ActiveRecord::Base
   validates_uniqueness_of :name
 
   def total_working_days
-    activities.inject(0) do |sum, activity|
+    sum = 0
+    activities.each do |activity|
       sum += activity.working_days
     end
+    sum
+  end
+
+  def current_working_days
+    sum = 0
+    activities.each do |activity|
+      sum += activity.working_days if activity.month == Date.today.month && activity.year == Date.today.year
+    end
+    sum
   end
 end

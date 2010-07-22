@@ -1,21 +1,8 @@
-<body>
-  <br/>
-  <div id="invoicings_informations">
-    <table border>
-      <thead>
-        <tr>
-          <th> Clients </th>
-          <th> Jours à facturer </th>
-        </tr>
-      </thead>
-      <tbody>
-          <% @customers.each do |customer| %>
-            <tr>
-              <td id="customer_name"> <%= customer.name %> </td>
-              <td id="invoicing_days"> <%= customer.total_working_days %> </td>
-            </tr>
-          <% end %>
-      </tbody>
-    </table>
-  </div>
-</body>
+<% @customer.each do |customer| -%>
+  <p class="infos">
+    Clients : <%= customer.name %> <br/>
+    Jours à facturer dans toute la table : <%= customer.total_working_days %> <br/>
+    Jours à facturer du mois courant : <%= customer.current_working_days %> <br/>
+  </p>
+<% end %>
+
