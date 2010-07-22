@@ -13,9 +13,9 @@ describe ActivityNote do
     dev1, dev2, dev3 = Factory(:kantenien, :name =>'nicolas'), \
       Factory(:kantenien, :name => 'philippe'), Factory(:kantenien, :name => 'damien')
 
-    record1 = Factory(:activity_note, :customer => c1, :developper => dev2, :working_days => 10 )
-    record2 = Factory(:activity_note, :customer => c1, :developper => dev3, :working_days => 5 )
-    record3 = Factory(:activity_note, :customer => c2, :developper => dev1, :working_days => 25 )
+    Factory(:activity_note, :customer => c1, :developper => dev2, :working_days => 10 )
+    Factory(:activity_note, :customer => c1, :developper => dev3, :working_days => 5 )
+    Factory(:activity_note, :customer => c2, :developper => dev1, :working_days => 25 )
 
   end
 
