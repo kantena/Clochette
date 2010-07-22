@@ -8,5 +8,8 @@
     <%= note.working_days %>
   </p
   <%= link_to "Modifier", :controller => "activity_notes", :action => "edit", :id => note %>
-  <%= link_to('Supprimer', activity_note_url(note),:method =>'delete',:confirm => 'Are you sure ?') %>
+  <%= link_to('Supprimer', activity_note_url(note),:method =>'delete',:confirm => 'Etes vous sûre ?') %>
 <% end %>
+
+<br /><br />
+<%= link_to 'Ajout de compte rendu pour une autre société ', new_activity_note_url,:method =>'get' %>

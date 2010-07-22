@@ -1,11 +1,14 @@
-<% form_for @activity_note do %>
-  <p>
-    <%= label_tag ('Société : ') %>
-    <%= @activity_note.customer.name %>
-  </p>
-  <p>
-    <%= label_tag ('Nb jours à facturer : ') %>
-    <%= text_field :activity_note,:working_days ,:value => @activity_note.working_days %>
-  </p
-  <%= submit_tag 'Enregistrer' %>
-<% end %>
+<div id="edit_activity_note">
+  <% form_for @activity_note do %>
+    <p>
+      <%= label_tag ('Société : ') %>
+      <%= @activity_note.customer.name %>
+    </p>
+    <p>
+      <%= label_tag ('Nb jours à facturer : ') %>
+      <%= text_field :activity_note,:working_days ,:value => @activity_note.working_days %>
+    </p
+    <%= submit_tag 'Enregistrer' %>
+  <% end %>
+</div>
+
