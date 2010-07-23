@@ -3,6 +3,10 @@ require 'spec_helper'
 describe ActivityNotesController do
   integrate_views
 
+  def setup
+    session[:developper]= 1
+  end
+
   context "routage des pages" do
     it "affiche la page index" do
       get 'index'
