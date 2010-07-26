@@ -7,7 +7,12 @@ class SessionsController < ApplicationController
   def update
     if (User.exists?(params[:id]))
       session[:user] = params[:id].to_i
-      redirect_to activity_notes_url
+      user = User.find params[:id]
+      if user.is_developper?
+        redirect_to activity_notes_url
+      else
+        redirect_to :controller => "home", :action => "index"
+      end
     else
       redirect_to login_url
     end
