@@ -1,7 +1,6 @@
 class ActivityNotesController < ApplicationController
   def index
-    # TODO replace 1 by developper id
-    @activity_notes = ActivityNote.find_all_by_developper_id 1
+    @activity_notes = ActivityNote.find_all_by_developper_id session[:developper]
   end
 
   def update
@@ -26,8 +25,7 @@ class ActivityNotesController < ApplicationController
 
   def create
     activity_note = ActivityNote.new
-    # TODO replace 1 by developper id
-    activity_note.developper_id = 1
+    activity_note.developper_id = session[:developper]
     activity_note.working_days = params[:activity_note][:working_days]
     activity_note.customer_id = params[:activity_note][:customer_id]
     today = Date.today

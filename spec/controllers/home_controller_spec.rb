@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe RootController do
+describe HomeController do
   integrate_views
 
   context "routage des pages" do

@@ -1,0 +1,9 @@
+<div id ="login">
+  <ul>
+    <% @developpers.each do |developper| %>
+      <li>
+        <%= link_to "#{developper.name}", session_url(developper), :method => 'put' %>
+      </li>
+    <% end %>
+  </ul>
+</div>
