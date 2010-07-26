@@ -5,7 +5,7 @@ describe ActivityNote do
 
     @valid_attributes = {
       :customer_id => 1,
-      :developper_id => 1,
+      :user_id => 1,
       :working_days => 10,
       :month => 6,
       :year => 2010
@@ -14,9 +14,9 @@ describe ActivityNote do
     c1, c2 = Factory(:customer, :name => 'Vinci'), Factory(:customer, :name => 'Cour des comptes')
     dev1, dev2, dev3 = Factory(:kantenien, :name =>'nicolas'), Factory(:kantenien, :name => 'philippe'), Factory(:kantenien, :name => 'damien')
 
-    Factory(:activity_note, :customer => c1, :developper => dev2, :working_days => 10 )
-    Factory(:activity_note, :customer => c1, :developper => dev3, :working_days => 5 )
-    Factory(:activity_note, :customer => c2, :developper => dev1, :working_days => 25 )
+    Factory(:activity_note, :customer => c1, :user => dev2, :working_days => 10 )
+    Factory(:activity_note, :customer => c1, :user => dev3, :working_days => 5 )
+    Factory(:activity_note, :customer => c2, :user => dev1, :working_days => 25 )
 
   end
 
@@ -29,9 +29,9 @@ describe ActivityNote do
     assert_kind_of Customer, activity_note.customer
   end
 
-  it "should have a Developper" do
+  it "should have a User" do
     activity_note = Factory(:activity_note)
-    assert_kind_of Developper, activity_note.developper
+    assert_kind_of User, activity_note.user
   end
 
   it "should expect a month among 1 and 12" do

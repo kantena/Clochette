@@ -38,6 +38,6 @@ end
 
 def build_releve_activite dev, jours, client, mois=7, annee=2010
   customer = Factory(:customer, :name => client) unless Customer.find_by_name(client)
-  developper = Factory(:kantenien, :name => dev) unless Developper.find_by_name(dev)
-  Factory(:activity_note, :customer => customer, :developper => developper, :working_days => jours ,:month => mois, :year => annee)
+  developper = Factory(:kantenien, :name => dev) unless User.find_by_name(dev)
+  Factory(:activity_note, :customer => customer, :user => developper, :working_days => jours ,:month => mois, :year => annee)
 end
