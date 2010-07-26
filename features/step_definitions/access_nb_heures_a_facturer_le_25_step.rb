@@ -1,9 +1,15 @@
-Soit /^([^ ]*) ayant déclarer (\d+) jours de travail pour le client "([^"]*)"$/ do |dev_name, nb_jours_travail, client|
-  build_releve_activite dev_name, nb_jours_travail, client
+Soit /^Nicolas ayant déclarer (\d+) jours de travail pour le client "([^"]*)"$/ do |nb_jours_travail, client|
+  act1 = build_releve_activite 'Nicolas', nb_jours_travail, client
+  act2 = build_releve_activite 'Philippe', nb_jours_travail, client
+  Factory(:customer, :activities => [act1, act2])
+end
+
+Soit /^Philippe ayant déclarer (\d+) jours de travail pour le client "([^"]*)"$/ do |nb_jours_travail, client|
+ 
 end
 
 Lorsque /^l'on va sur la page d'acceuil$/ do
-  visit "/"
+  visit "/home"
 end
 
 Alors /^on obtient pour le client "([^"]*)" (\d+) jours à facturer$/ do |nom_client, nb_jours_a_facturer|
