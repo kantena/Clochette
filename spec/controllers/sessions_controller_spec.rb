@@ -20,7 +20,7 @@ describe SessionsController do
       faery = Factory(:kantenien, :name =>'angélique', :function => 'faery')
       put :update , :id => faery.id
       assert_equal faery.id, session[:user]
-      assert_redirected_to home_url
+      assert_redirected_to :controller => "home", :action => "index"
     end
 
     it "redirection a l'écran de logoin en cas d'erreur" do

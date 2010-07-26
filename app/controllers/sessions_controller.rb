@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       if user.is_developper?
         redirect_to activity_notes_url
       else
-        redirect_to home_url
+        redirect_to :controller => "home", :action => "index"
       end
     else
       redirect_to login_url
