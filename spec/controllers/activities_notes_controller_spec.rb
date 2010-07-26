@@ -4,7 +4,7 @@ describe ActivityNotesController do
   integrate_views
 
   def setup
-    session[:developper]= 1
+    session[:user]= 1
   end
 
   context "routage des pages" do
@@ -16,7 +16,7 @@ describe ActivityNotesController do
     it "affiche la page edit" do
       company = Factory(:customer, :name => 'Vinci')
       equipier = Factory(:kantenien, :name =>'nicolas')
-      activity_note = Factory(:activity_note, :customer => company, :developper => equipier, :working_days => 10 )
+      activity_note = Factory(:activity_note, :customer => company, :user => equipier, :working_days => 10 )
       get 'edit', :id => activity_note
       response.should be_success
     end
@@ -24,7 +24,7 @@ describe ActivityNotesController do
     it "suppression d'une activité" do
       company = Factory(:customer, :name => 'Vinci')
       equipier = Factory(:kantenien, :name =>'nicolas')
-      activity_note = Factory(:activity_note, :customer => company, :developper => equipier, :working_days => 10 )
+      activity_note = Factory(:activity_note, :customer => company, :user => equipier, :working_days => 10 )
       get 'destroy', :id => activity_note.id
       response.should redirect_to( :action => "index")
       note = ActivityNote.find :all
@@ -41,7 +41,7 @@ describe ActivityNotesController do
     it "affiche la liste des sociétés avec le nombre de jours à facturer pour l'equipier" do
       company = Factory(:customer, :name => 'Vinci')
       equipier = Factory(:kantenien, :name =>'nicolas')
-      Factory(:activity_note, :customer => company, :developper => equipier, :working_days => 10 )
+      Factory(:activity_note, :customer => company, :user => equipier, :working_days => 10 )
       get 'index'
       response.should be_success
       assert response.body.include?("Vinci"), "Vinci n'apparait pas sur la page"
@@ -54,7 +54,7 @@ describe ActivityNotesController do
     it "Mets à jourle nombre de jours a facturer pour l'equipier pour une société" do
       company = Factory(:customer, :name => 'Vinci')
       equipier = Factory(:kantenien, :name =>'nicolas')
-      note =  Factory(:activity_note, :customer => company, :developper => equipier, :working_days => 10 )
+      note =  Factory(:activity_note, :customer => company, :user => equipier, :working_days => 10 )
       put 'update', :id => note.id , :activity_note => {:working_days => 1}
       response.should redirect_to( :action => "index")
       note_upated = ActivityNote.find note.id

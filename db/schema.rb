@@ -9,12 +9,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100721140009) do
+ActiveRecord::Schema.define(:version => 20100726090224) do
 
   create_table "activity_notes", :force => true do |t|
     t.integer  "customer_id"
-    t.integer  "developper_id"
-    t.integer  "working_days",  :default => 0
+    t.integer  "user_id"
+    t.integer  "working_days", :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "month"
@@ -27,8 +27,10 @@ ActiveRecord::Schema.define(:version => 20100721140009) do
     t.datetime "updated_at"
   end
 
-  create_table "developpers", :force => true do |t|
-    t.string   "name",       :null => false
+  create_table "users", :force => true do |t|
+    t.string   "name",            :null => false
+    t.integer  "periode_travail"
+    t.string   "function"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

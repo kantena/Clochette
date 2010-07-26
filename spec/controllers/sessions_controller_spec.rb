@@ -12,7 +12,7 @@ describe SessionsController do
     it "creation d'une nouvelle session" do
       developper = Factory(:kantenien, :name =>'nicolas')
       put :update , :id => developper.id
-      assert_equal developper.id, session[:developper]
+      assert_equal developper.id, session[:user]
       assert_redirected_to activity_notes_url
     end
 

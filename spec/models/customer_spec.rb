@@ -14,10 +14,10 @@ describe Customer do
 
   it "should validate the uniqueness of a client name" do
     assert_nothing_raised do
-      Developper.create!(:name => 'Vinci')
+      User.create!(:name => 'Vinci')
     end
     assert_raise(ActiveRecord::RecordInvalid) do
-      Developper.create!(:name => 'Vinci')
+      User.create!(:name => 'Vinci')
     end
   end
 
@@ -48,8 +48,8 @@ describe Customer do
   it "should calculate total work days for current period by default" do
     c1, c2 = Factory(:customer, :name => 'Vinci'), Factory(:customer, :name => 'Cour des comptes')
     dev1, dev2 = Factory(:kantenien, :name =>'nicolas'), Factory(:kantenien, :name => 'philippe')
-    act1, act2 = Factory(:activity_note, :customer => c1, :developper => dev1, :working_days => 10),\
-      Factory(:activity_note, :customer => c2, :developper => dev2, :working_days => 8)
+    act1, act2 = Factory(:activity_note, :customer => c1, :user => dev1, :working_days => 10),\
+      Factory(:activity_note, :customer => c2, :user => dev2, :working_days => 8)
     client = Factory(:customer, :activities => [act1, act2])
     assert_equal 18, client.total_working_days
 
