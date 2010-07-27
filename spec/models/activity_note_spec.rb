@@ -8,10 +8,12 @@ describe ActivityNote do
       :user_id => 1,
       :working_days => 10,
       :month => 6,
-      :year => 2010
+      :year => 2010,
+      :validation_state => false
     }
 
-    c1, c2 = Factory(:customer, :name => 'Vinci'), Factory(:customer, :name => 'Cour des comptes')
+    c1 = Factory(:customer, :name => 'Vinci')
+    c2 = Factory(:customer, :name => 'Cour des comptes')
     dev1, dev2, dev3 = Factory(:kantenien, :name =>'nicolas'), Factory(:kantenien, :name => 'philippe'), Factory(:kantenien, :name => 'damien')
 
     Factory(:activity_note, :customer => c1, :user => dev2, :working_days => 10 )

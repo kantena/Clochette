@@ -17,15 +17,12 @@ Factory.define :activity_note do |r|
   r.working_days 0
   r.month 10
   r.year 2010
+  r.validation_state false
 end
 
 Factory.define :vacation_note do |v|
-  v.kantenien {|a| a.association(:kantenien)}
-  v.day_beginning_vacation 0
-  v.day_end_vacation 0
-  v.month_beginning_vacation 0
-  v.month_end_vacation 0
-  v.year_beginning_vacation 2010
-  v.year_end_vacation 210
-  v.nb_jours_conges 0
+  v.user {|a| a.association(:kantenien)}
+  v.vacation_days 0
+  v.month Date.today.month
+  v.year Date.today.year
 end

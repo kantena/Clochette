@@ -35,6 +35,8 @@ describe ActivityNotesController do
       get 'new'
       response.should be_success
     end
+
+
   end
 
   context "affichage de la page" do
@@ -51,7 +53,7 @@ describe ActivityNotesController do
   end
 
   context "Enregistrement du nombre de jour de facturation" do
-    it "Mets à jourle nombre de jours a facturer pour l'equipier pour une société" do
+    it "Mets à jour le nombre de jours a facturer pour l'equipier pour une société" do
       company = Factory(:customer, :name => 'Vinci')
       equipier = Factory(:kantenien, :name =>'nicolas')
       note =  Factory(:activity_note, :customer => company, :user => equipier, :working_days => 10 )
@@ -68,6 +70,22 @@ describe ActivityNotesController do
       response.should redirect_to( :action => "index")
       note_upated = ActivityNote.find :first
       assert_equal 1, note_upated.working_days
+    end
+  end
+
+  context "validation d'une activité" do
+    it "should change the validation state of the first activity in the list" do
+      company = Factory(:customer, :name => 'Vinci')
+      equipier = Factory(:kantenien, :name =>'nicolas')
+      activity_note = Factory(:activity_note, :customer => company, :user => equipier, :working_days => 10 )
+      get 'edit', :id => activity_note
+      check 'activity_note[validation_state]'
+      pending
+      #TODO: problème de routage
+      # ERROR : No route matches {:commit=>"Enregistrer", :action=>"/activity_notes/1", :controller=>"activity_notes", :_method=>"put", :activity_note=>{"validation_state"=>"true", "working_days"=>"10"}}
+      submit_form 'Enregistrer'
+      response.should redirect_to(:action => "index")
+      assert_equal true, activity_note.validation_state, "problème enregistrement de la validation du relevé d'activités"
     end
   end
 end

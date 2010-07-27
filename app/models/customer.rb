@@ -1,16 +1,34 @@
 class Customer < ActiveRecord::Base
   has_many :activities, :class_name => "ActivityNote"
-  has_many :current_activites, :class_name => "ActivityNote", :conditions => {:month => Date.today.month, :year => Date.today.year}
-
+  has_many :current_activities, :class_name => "ActivityNote", :conditions => {:month => Date.today.month, :year => Date.today.year}
+ 
   validates_presence_of :name
   validates_uniqueness_of :name
+
 
   def total_working_days
     calculate_sum_for activities
   end
 
   def current_working_days
-    calculate_sum_for current_activites
+    calculate_sum_for current_activities
+  end
+
+  def current_working_days_yet_validated
+    sum = 0
+    current_activities.each do |activity|
+     sum += activity.working_days if activity.validation_state
+    end
+    sum
+  end
+
+  def global_activities_state
+    state = true
+    state = false if current_activities.size == 0
+    current_activities.each do |activity|
+      state &&= activity.validation_state
+    end
+    state
   end
 
   private

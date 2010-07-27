@@ -32,10 +32,9 @@ describe Customer do
   it "should have a list of current activity notes ??" do
     Factory(:activity_note, :customer => @cust, :month => Date.today.month, :year => Date.today.year)
     Factory(:activity_note, :customer => @cust, :month => Date.today.month, :year => Date.today.year)
-    assert_kind_of ActivityNote, @cust.current_activites.first
-    assert_equal 2, @cust.current_activites.size
+    assert_kind_of ActivityNote, @cust.current_activities.first
+    assert_equal 2, @cust.current_activities.size
   end
-
 
   describe "#total_working_days" do
     it "should calculate total working days for all the records" do
@@ -60,6 +59,36 @@ describe Customer do
       Factory(:activity_note, :customer => @cust, :working_days => 1, :month => Date.today.month, :year => Date.today.year)
       Factory(:activity_note, :customer => @cust, :working_days => 23, :month => Date.today.month, :year => 2009)
       assert_equal 1, @cust.current_working_days
+    end
+  end
+
+  describe "#global_activities_state" do
+
+    it "should return false by default" do
+      Factory(:activity_note, :customer => @cust)
+      Factory(:activity_note, :customer => @cust)
+      assert_equal false, @cust.global_activities_state
+    end
+
+    it "should compute true if all of state of activities are valid" do
+      Factory(:activity_note, :customer => @cust, :month => Date.today.month, :year => Date.today.year, :validation_state => true)
+      Factory(:activity_note, :customer => @cust, :month => Date.today.month, :year => Date.today.year, :validation_state => true)
+      assert_equal true, @cust.global_activities_state
+    end
+
+    it "should return false if one state if activities for a given customer is false" do
+      Factory(:activity_note, :customer => @cust, :month => Date.today.month, :year => Date.today.year, :validation_state => true)
+      Factory(:activity_note, :customer => @cust, :month => Date.today.month, :year => Date.today.year, :validation_state => false)
+      assert_equal false, @cust.global_activities_state
+    end
+
+  end
+
+  describe "#current_working_days_yet_validated" do
+    it "should compute the validated total of working days on the current month for a given customer" do
+      Factory(:activity_note, :customer => @cust, :working_days => 1, :month => Date.today.month, :year => Date.today.year, :validation_state => false)
+      Factory(:activity_note, :customer => @cust, :working_days => 23, :month => Date.today.month, :year => Date.today.year, :validation_state => true)
+      assert_equal 23, @cust.current_working_days_yet_validated
     end
   end
 end

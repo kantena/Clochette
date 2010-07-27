@@ -6,10 +6,19 @@
   <p>
     <%= label_tag ('Nb jours à facturer : ') %>
     <%= note.working_days %>
-  </p
+  </p>
+  <p>
+    <%= label_tag ("Validation du relevé d'activité : ") %>
+    <% if note.validation_state == true %>
+      Oui
+    <% else %>
+      Non
+    <% end %>
+  </p>
+
   <%= link_to "Modifier", :controller => "activity_notes", :action => "edit", :id => note %>
   <%= link_to('Supprimer', activity_note_url(note),:method =>'delete',:confirm => 'Etes vous sûre ?') %>
 <% end %>
 
-<br /><br />
+<br/><br/>
 <%= link_to 'Ajout de compte rendu pour une autre société ', new_activity_note_url,:method =>'get' %>
