@@ -5,4 +5,5 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :home
   map.resources :sessions
   map.resources :developpers
+  map.resources :vacations
 end

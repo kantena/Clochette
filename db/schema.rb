@@ -36,8 +36,8 @@ ActiveRecord::Schema.define(:version => 20100727075900) do
     t.datetime "updated_at"
   end
 
-  create_table "vacation_notes", :force => true do |t|
-    t.integer "customer_id"
+  create_table "vacations", :force => true do |t|
+    t.integer "user_id"
     t.integer "vacation_days", :default => 0
     t.integer "month"
     t.integer "year"
