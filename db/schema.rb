@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(:version => 20100727075900) do
     t.datetime "updated_at"
     t.integer  "month"
     t.integer  "year"
-    t.boolean  "validation_state"
+    t.boolean  "validation_state", :default => false
   end
 
   create_table "customers", :force => true do |t|

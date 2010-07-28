@@ -1,6 +1,6 @@
 class CreateGlobalActivityStatesControllers < ActiveRecord::Migration
   def self.up
-    add_column :activity_notes, :validation_state, :boolean
+    add_column :activity_notes, :validation_state, :boolean, :default => false
     add_column :activity_notes, :global_activity_states_controller_id, :integer
 
     create_table :global_activity_states_controllers do |t|
