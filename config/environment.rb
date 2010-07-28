@@ -5,4 +5,6 @@ Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
   config.gem "mocha", :version => "0.9.8"
   config.gem "shoulda", :version => "2.11.1"
+  config.gem "sqlite3", :version => "0.1.1"
+  config.gem "factory_girl", :version => "1.3.1"
 end
