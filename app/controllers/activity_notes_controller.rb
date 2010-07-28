@@ -1,5 +1,8 @@
 class ActivityNotesController < ApplicationController
   def index
+    if params[:mode_chargement] == 'import'
+      ActivityNote.import session[:user]
+    end
     @activity_notes = ActivityNote.find_all_by_user_id session[:user]
   end
 

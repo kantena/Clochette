@@ -1,0 +1,82 @@
+--- !ruby/object:Gem::Specification 
+name: gcal4ruby
+version: !ruby/object:Gem::Version 
+  prerelease: false
+  segments: 
+  - 0
+  - 5
+  - 4
+  version: 0.5.4
+platform: ruby
+authors: 
+- Mike Reich
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-05-23 00:00:00 +02:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: gdata4ruby
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 0
+        - 1
+        - 2
+        version: 0.1.2
+  type: :runtime
+  version_requirements: *id001
+description: "GCal4Ruby is a Ruby Gem that can be used to interact with the current version of the Google Calendar API. GCal4Ruby provides the following features: Create and edit calendar events, Add and invite users to events, Set reminders, Make recurring events."
+email: mike@seabourneconsulting.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- README
+- CHANGELOG
+- lib/gcal4ruby.rb
+- lib/gcal4ruby/service.rb
+- lib/gcal4ruby/calendar.rb
+- lib/gcal4ruby/event.rb
+- lib/gcal4ruby/recurrence.rb
+- test/unit.rb
+has_rdoc: true
+homepage: http://cookingandcoding.com/gcal4ruby/
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: gcal4ruby
+rubygems_version: 1.3.6
+signing_key: 
+specification_version: 3
+summary: A full featured wrapper for interacting with the Google Calendar API
+test_files: 
+- test/unit.rb
