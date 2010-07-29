@@ -11,25 +11,30 @@
     <thead>
       <tr>
         <th> Nom du développeur </th>
-        <th> Numéro du relevé </th>
         <th> Nb jours à facturer </th>
         <th> Validation du relevé ? </th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-        <td> </td>
-      </tr>
+      <% customer.current_activities.each do |activity| -%>
+        <tr>
+          <td> <%= activity.user.name %></td>
+          <td> <%=activity.working_days %></td>
+          <% if activity.validation_state?
+            valid = "Oui"
+          else
+            valid = "Non"
+          end %>
+          <td> <%= valid %></td>
+        </tr>
+      <% end %>
     </tbody>
   </table>
   <br/>
 
-<%= link_to('Supprimer client', home_url(customer),:method =>'delete',:confirm => 'Etes vous sûre ?') %> <br/>
--------------------------------------------------------------------------------------------------------------
-</p>
+  <%= link_to('Supprimer client', home_url(customer),:method =>'delete',:confirm => 'Etes vous sûre ?') %> <br/>
+  -------------------------------------------------------------------------------------------------------------
+  </p>
 <% end %>
 <p> 
   <br/> <br/>
