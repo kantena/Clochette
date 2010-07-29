@@ -20,12 +20,7 @@
         <tr>
           <td> <%= activity.user.name %></td>
           <td> <%=activity.working_days %></td>
-          <% if activity.validation_state?
-            valid = "Oui"
-          else
-            valid = "Non"
-          end %>
-          <td> <%= valid %></td>
+          <td> <%= activity.validation_state? ? "Oui" : "Non" %></td>
         </tr>
       <% end %>
     </tbody>

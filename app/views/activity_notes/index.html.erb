@@ -9,11 +9,7 @@
   </p>
   <p>
     <%= label_tag ("Validation du relevé d'activité : ") %>
-    <% if note.validation_state %>
-      Oui
-    <% else %>
-      Non
-    <% end %>
+    <%= note.validation_state? ? "Oui" : "Non" %>
   </p>
 
   <%= link_to "Modifier", :controller => "activity_notes", :action => "edit", :id => note %>
