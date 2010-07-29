@@ -1,3 +1,4 @@
+# coding: utf-8
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path(File.join(File.dirname(__FILE__),'..','config','environment'))
 require 'rubygems'
@@ -8,8 +9,15 @@ require 'mocha'
 require 'shoulda'
 require 'factory_girl'
 require 'factories'
+require 'webrat'
+require 'webrat/core/matchers'
+require 'webrat/core/scope'
 
 Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require f}
+
+Webrat.configure do |config|
+  config.mode = :rails
+end
 
 Spec::Runner.configure do |config|
 
@@ -17,4 +25,5 @@ Spec::Runner.configure do |config|
   config.use_instantiated_fixtures  = false
   config.fixture_path = RAILS_ROOT + '/spec/fixtures/'
 
+  include Webrat::Methods
 end

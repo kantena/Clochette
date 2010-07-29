@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'spec_helper'
 
 describe ActivityNotesController do
@@ -26,7 +27,7 @@ describe ActivityNotesController do
       company = Factory(:customer, :name => 'Vinci')
       equipier = Factory(:kantenien, :name =>'nicolas')
       activity_note = Factory(:activity_note, :customer => company, :user => equipier, :working_days => 10 )
-      get 'destroy', :id => activity_note.id
+      delete 'destroy', :id => activity_note.id
       response.should redirect_to( :action => "index")
       note = ActivityNote.find :all
       assert_equal 0, note.size
@@ -52,6 +53,7 @@ describe ActivityNotesController do
       get 'index', :mode_chargement => "import"
       response.should be_success
     end
+    
   end
 
   context "affichage de la page" do
@@ -68,7 +70,7 @@ describe ActivityNotesController do
   end
 
   context "Enregistrement du nombre de jour de facturation" do
-    it "Mets à jourle nombre de jours a facturer pour l'equipier pour une société" do
+    it "Mets à jour le nombre de jours a facturer pour l'equipier pour une société" do
       company = Factory(:customer, :name => 'Vinci')
       equipier = Factory(:kantenien, :name =>'nicolas')
       note =  Factory(:activity_note, :customer => company, :user => equipier, :working_days => 10 )
@@ -81,11 +83,13 @@ describe ActivityNotesController do
     it "cree un nouveau compte rendu d'activité" do
       company = Factory(:customer, :name => 'Vinci')
       equipier = Factory(:kantenien, :name =>'nicolas')
-      put 'create',:activity_note => {:working_days => 1, :customer_id => company.id}
+      post 'create',:activity_note => {:working_days => 1, :customer_id => company.id}
       response.should redirect_to( :action => "index")
       note_upated = ActivityNote.find :first
       assert_equal 1, note_upated.working_days
     end
   end
+
+
 end
   

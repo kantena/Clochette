@@ -1,8 +1,39 @@
+
+<h3> Liste des informations pour la facturation des clients du mois courant </h3>
 <% @customers.each do |customer| -%>
   <p>
-    Clients : <%= customer.name %> <br/>
-    Jours à facturer dans toute la table : <%= customer.total_working_days %> <br/>
-    Jours à facturer du mois courant : <%= customer.current_working_days %> <br/>
-  </p>
+    Client : <%= customer.name %> <br/>
+    Jours à facturer pour le mois courant : <%= customer.current_working_days %>
+    dont <%= customer.current_working_days_yet_validated %> jours validés <br/> <br/>
+    Détails des relevés d'activités concernant ce client : <br/>
+
+  <table border="" width="1000">
+    <thead>
+      <tr>
+        <th> Nom du développeur </th>
+        <th> Numéro du relevé </th>
+        <th> Nb jours à facturer </th>
+        <th> Validation du relevé ? </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+
+<%= link_to('Supprimer client', home_url(customer),:method =>'delete',:confirm => 'Etes vous sûre ?') %> <br/>
+-------------------------------------------------------------------------------------------------------------
+</p>
 <% end %>
+<p> 
+  <br/> <br/>
+</p>
+
+<%= link_to "Ajout d'un nouveau client Kantena", { :controller => "home", :action => "new"} %> <br/>
 

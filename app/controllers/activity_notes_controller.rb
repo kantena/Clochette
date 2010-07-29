@@ -11,6 +11,7 @@ class ActivityNotesController < ApplicationController
   def update
     activity_note = ActivityNote.find params[:id]
     activity_note.working_days = params[:activity_note][:working_days]
+    activity_note.validation_state = params[:activity_note][:validation_state]
     activity_note.save!
     redirect_to :action => "index"
   end
@@ -39,4 +40,5 @@ class ActivityNotesController < ApplicationController
     activity_note.save
     redirect_to :action => "index"
   end
+ 
 end

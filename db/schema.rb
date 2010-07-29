@@ -9,16 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100726095603) do
+ActiveRecord::Schema.define(:version => 20100727075900) do
 
   create_table "activity_notes", :force => true do |t|
     t.integer  "customer_id"
     t.integer  "user_id"
-    t.integer  "working_days", :default => 0
+    t.integer  "working_days",     :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "month"
     t.integer  "year"
+    t.boolean  "validation_state", :default => false
   end
 
   create_table "customers", :force => true do |t|
@@ -33,6 +34,13 @@ ActiveRecord::Schema.define(:version => 20100726095603) do
     t.string   "function"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "vacations", :force => true do |t|
+    t.integer "user_id"
+    t.integer "vacation_days", :default => 0
+    t.integer "month"
+    t.integer "year"
   end
 
 end

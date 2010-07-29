@@ -1,0 +1,10 @@
+<div id="delete_customer">
+  <% form_for :home, @customers, :url => { :action => "destroy" } do %>
+    <p>
+      <%= label_tag ('Choix de la société : ') %>
+      <%= select("customer", "customer_id", Customer.all.collect {|c| [ c.name, c.id ] } , {:prompt => 'Selectionner société'}) %>
+    </p>
+
+    <%= submit_tag 'Supprimer', :confirm => "Etes-vous sûr?" %>
+  <% end %>
+</div>

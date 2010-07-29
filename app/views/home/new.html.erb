@@ -1,0 +1,13 @@
+<!-- #TODO: le lien rapide 'Acceuil' ne marche pas -->
+<div id="new_customer">
+  <% form_for  :home, @customers, :url => { :action => "create" } do %>
+    <p>
+      <%= label_tag ('Nom de la société : ') %>
+      <%= text_field :customer, :name %>
+    </p>
+
+    <%= submit_tag 'Enregistrer' %>
+  <% end %>
+</div>
+<br/><br/>
+<%= link_to "Retour", {:controller => "home", :action => 'index'} %>

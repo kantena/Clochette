@@ -1,0 +1,139 @@
+--- !ruby/object:Gem::Specification 
+name: sqlite3
+version: !ruby/object:Gem::Version 
+  hash: 25
+  prerelease: false
+  segments: 
+  - 0
+  - 1
+  - 1
+  version: 0.1.1
+platform: ruby
+authors: 
+- "Jakub Ku\xC5\xBAma"
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-05-08 00:00:00 +02:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: ffi
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 1
+        segments: 
+        - 0
+        - 6
+        - 3
+        version: 0.6.3
+  type: :runtime
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency 
+  name: test-unit
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 2
+        - 0
+        version: "2.0"
+  type: :development
+  version_requirements: *id002
+- !ruby/object:Gem::Dependency 
+  name: activerecord
+  prerelease: false
+  requirement: &id003 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 9
+        segments: 
+        - 2
+        - 3
+        - 5
+        version: 2.3.5
+  type: :development
+  version_requirements: *id003
+description: Experimental SQLite3 FFI bindings for Ruby 1.9 with encoding support
+email: qoobaa@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- lib/sqlite3/statement.rb
+- lib/sqlite3/pragmas.rb
+- lib/sqlite3/api.rb
+- lib/sqlite3/database.rb
+- lib/sqlite3/resultset.rb
+- lib/sqlite3/extensions.rb
+- lib/sqlite3/driver.rb
+- lib/sqlite3/constants.rb
+- lib/sqlite3/version.rb
+- lib/sqlite3/encoding.rb
+- lib/sqlite3/errors.rb
+- lib/sqlite3.rb
+- LICENSE
+- README.rdoc
+has_rdoc: true
+homepage: http://github.com/qoobaa/sqlite3
+licenses: []
+
+post_install_message: |
+  ==== WARNING ===================================================================
+  This is an early alpha version of SQLite3/Ruby FFI bindings!
+  
+  If you need native bindings for Ruby 1.8/1.9 - install sqlite3-ruby
+  instead.  You may need to uninstall this sqlite3 gem as well.
+  
+  Thank you for installing sqlite3 gem! Suggestions: qoobaa@gmail.com
+  ================================================================================
+
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 49
+      segments: 
+      - 1
+      - 9
+      - 1
+      version: 1.9.1
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 23
+      segments: 
+      - 1
+      - 3
+      - 6
+      version: 1.3.6
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.7
+signing_key: 
+specification_version: 3
+summary: SQLite3 FFI bindings for Ruby 1.9
+test_files: []
+
