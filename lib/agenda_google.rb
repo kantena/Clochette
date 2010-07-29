@@ -24,8 +24,7 @@ class AgendaGoogle
     service = GCal4Ruby::Service.new
     service.authenticate(config["user"], config["password"])
     service.calendars
-  end
-  
+  end  
 end
 
 
