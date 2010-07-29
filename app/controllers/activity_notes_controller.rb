@@ -1,9 +1,11 @@
 class ActivityNotesController < ApplicationController
   def index
+    user = User.find session[:user]
     if params[:mode_chargement] == 'import'
-      ActivityNote.import session[:user]
+      parser = AgendaParser.new AgendaGoogle.new
+      user.import_from parser
     end
-    @activity_notes = ActivityNote.find_all_by_user_id session[:user]
+    @activity_notes = user.activity_notes
   end
 
   def update

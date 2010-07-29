@@ -8,3 +8,5 @@ db/*.sqlite3
 *.swp
 *~
 .DS_Store
+config/database.yml
+config/agenda_connection.yml
