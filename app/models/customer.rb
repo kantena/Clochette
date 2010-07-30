@@ -36,15 +36,11 @@ class Customer < ActiveRecord::Base
   end
 
   def past_activity_notes month
-    ActivityNote.find :all,:conditions => ["month = ? and year = ? and customer_id = ?", month, Date.today.year,self]
+    ActivityNote.all :conditions => ["month = ? and year = ? and customer_id = ?", month, Date.today.year,self]
   end
 
   private
   def calculate_sum_for activity_list
-    sum = 0
-    activity_list.each do |activity|
-      sum += activity.working_days
-    end
-    sum
+    activity_list.to_a.sum(&:working_days)
   end
 end

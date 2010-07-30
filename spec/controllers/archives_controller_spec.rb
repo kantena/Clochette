@@ -29,30 +29,17 @@ describe ArchivesController do
     
   end
 
-  it "affiche les archives d'il y a trois mois" do
+  it "affiche les archives du mois de juin" do
     past_month = 6
     nicolas = Factory(:kantenien, :name =>'nicolas')
     cdc = Factory(:customer, :name => 'Cour des comptes')
     Factory(:activity_note, :customer => cdc, :user => nicolas, :working_days => 1,
       :month => past_month, :year => Date.today.year, :validation_state => false)
 
-    get 'show', :id => past_month - 2
+    get 'index', :selected_month => past_month - 2
     response.should be_success
     assert response.body.include?("Avril"),
       "'Avril' n'apparait pas sur la page"
-  end
-
-  it "affiche les archives d'il y a un an" do
-    past_month = 6
-    nicolas = Factory(:kantenien, :name =>'nicolas')
-    cdc = Factory(:customer, :name => 'Cour des comptes')
-    Factory(:activity_note, :customer => cdc, :user => nicolas, :working_days => 1,
-      :month => past_month, :year => Date.today.year, :validation_state => false)
-
-    get 'show', :id => past_month - 12
-    response.should be_success
-    assert response.body.include?("Décembre"),
-      "'Décembre' n'apparait pas sur la page"
   end
 end
   

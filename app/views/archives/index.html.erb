@@ -1,7 +1,7 @@
 <h3> Liste des informations pour la facturation des clients du mois de
-  <%= (t :'date.month_names')[@selected_month] %></h3>
+  <%= t(:'date.month_names')[@selected_month] %></h3>
 
-<%=  select("activity_note", "month", (@today -12..@today).map {|num| [ (t :'date.month_names')[num],num ] }) %>
+<%=  select("activity_note", "month", (1..@current_month).map {|num| [ t(:'date.month_names')[num],num ] }, {:prompt => ''}) %>
 
 <% @customers.each do |customer| -%>
   <p>
@@ -9,7 +9,7 @@
     Jours facturés  : <%= customer.past_working_days(@selected_month) %>  <br/>
     Détails des relevés d'activités concernant ce client : <br/>
   </p>
-  <table id ="activity_notes_table">
+  <table id="activity_notes_table">
     <thead>
       <tr>
         <th> Nom du développeur </th>
