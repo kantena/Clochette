@@ -3,10 +3,10 @@
   <head>
     <title> <%= @page_title || "Clochette" %> </title>
     <%=  stylesheet_link_tag  "clochette", :media => "all"  %>
+    <%= javascript_include_tag "jquery-1.3.2", "ui.core", "application" %>
   </head>
 
   <body>
-
     <div id="banner">
       <tr> <%= image_tag("logo_kantena.gif") %> </tr>
       <tr> <%= @page_title || "Clochette" %> </tr>
@@ -15,6 +15,7 @@
       <%= 'Liens rapides :   '%>
       <%= link_to 'Acceuil', "/home" %>
       <%= link_to 'CRA', activity_notes_url %>
+      <%= link_to 'Archives', archives_url %>
       <%= link_to 'Congés', "vacations" %>
     </div>
     <div id="main">

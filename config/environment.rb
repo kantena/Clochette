@@ -8,4 +8,6 @@ Rails::Initializer.run do |config|
   config.gem "gcal4ruby", :version => "0.5.4"
   config.gem "sqlite3", :version => "0.1.1"
   config.gem "factory_girl", :version => "1.3.1"
+  config.i18n.default_locale = :fr
+ 
 end

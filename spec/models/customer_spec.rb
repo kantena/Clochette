@@ -43,6 +43,13 @@ describe Customer do
       Factory(:activity_note, :customer => @cust, :working_days => 8)
       assert_equal 10+8, @cust.total_working_days
     end
+
+    it "should calculate total working days for last month records" do
+      past_month = Date.today.month - 1
+      Factory(:activity_note, :customer => @cust, :working_days => 10,:month => past_month)
+      Factory(:activity_note, :customer => @cust, :working_days => 8,:month => past_month)
+      assert_equal 10+8, @cust.past_working_days(past_month)
+    end
   end
 
   it "should calculate total work days for current period by default" do
@@ -52,7 +59,6 @@ describe Customer do
       Factory(:activity_note, :customer => c2, :user => dev2, :working_days => 8)
     client = Factory(:customer, :activities => [act1, act2])
     assert_equal 18, client.total_working_days
-
   end
   
   describe "#current_working_days" do
@@ -90,6 +96,15 @@ describe Customer do
       Factory(:activity_note, :customer => @cust, :working_days => 1, :month => Date.today.month, :year => Date.today.year, :validation_state => false)
       Factory(:activity_note, :customer => @cust, :working_days => 23, :month => Date.today.month, :year => Date.today.year, :validation_state => true)
       assert_equal 23, @cust.current_working_days_yet_validated
+    end
+  end
+
+  describe "liste les archives" do
+    it " et liste les activités du mois passé" do
+      past_month = Date.today.month - 1
+      Factory(:activity_note, :customer => @cust, :working_days => 1, :month => past_month, :year => Date.today.year, :validation_state => false)
+      Factory(:activity_note, :customer => @cust, :working_days => 23, :month => past_month, :year => Date.today.year, :validation_state => true)
+      assert_equal 2, @cust.past_activity_notes(past_month).size
     end
   end
 end

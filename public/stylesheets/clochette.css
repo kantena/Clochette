@@ -15,3 +15,11 @@
     color:  #000 ;
     text-align:  center;
 }
+
+#activity_notes_table{
+    width: 1000px
+}
+
+#activity_notes_table, #activity_notes_table td{
+    border-style: inset
+}

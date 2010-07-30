@@ -14,10 +14,14 @@ class Customer < ActiveRecord::Base
     calculate_sum_for current_activities
   end
 
+  def past_working_days month
+    calculate_sum_for past_activity_notes(month)
+  end
+
   def current_working_days_yet_validated
     sum = 0
     current_activities.each do |activity|
-     sum += activity.working_days if activity.validation_state
+      sum += activity.working_days if activity.validation_state
     end
     sum
   end
@@ -29,6 +33,10 @@ class Customer < ActiveRecord::Base
       state &&= activity.validation_state
     end
     state
+  end
+
+  def past_activity_notes month
+    ActivityNote.find :all,:conditions => ["month = ? and year = ? and customer_id = ?", month, Date.today.year,self]
   end
 
   private
