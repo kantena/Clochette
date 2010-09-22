@@ -1,0 +1,76 @@
+--- !ruby/object:Gem::Specification 
+name: gdata4ruby
+version: !ruby/object:Gem::Version 
+  hash: 31
+  prerelease: false
+  segments: 
+  - 0
+  - 1
+  - 2
+  version: 0.1.2
+platform: ruby
+authors: 
+- Mike Reich
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-05-12 00:00:00 +02:00
+default_executable: 
+dependencies: []
+
+description: A full featured wrapper for interacting with the base Google Data API, including authentication and basic object handling
+email: mike@seabourneconsulting.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- README
+- CHANGELOG
+- lib/gdata4ruby.rb
+- lib/gdata4ruby/base.rb
+- lib/gdata4ruby/service.rb
+- lib/gdata4ruby/request.rb
+- lib/gdata4ruby/gdata_object.rb
+- lib/gdata4ruby/utils/utils.rb
+- lib/gdata4ruby/acl/access_rule.rb
+- test/unit.rb
+has_rdoc: true
+homepage: http://cookingandcoding.com/gdata4ruby/
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  none: false
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      hash: 3
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: gdata4ruby
+rubygems_version: 1.3.7
+signing_key: 
+specification_version: 3
+summary: A full featured wrapper for interacting with the base Google Data API
+test_files: 
+- test/unit.rb

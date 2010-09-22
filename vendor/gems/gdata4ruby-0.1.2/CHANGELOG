@@ -1,0 +1,7 @@
+#=CHANGELOG
+#==version 0.1.2
+#* Added better support for 'default' users in AccessRule
+#==version 0.1.1
+#* Added additional common attributes, including content, published, updated and author info
+#==version 0.1.0
+#* Initial Version
