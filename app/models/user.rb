@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
     unless events.empty?
       ActivityNote.destroy_all(:month => today.month, :year => today.year, :user_id => self)
     end
-    
+
     events.each do |event|
       company = Customer.find_by_name(event.title)
       unless company.nil?

@@ -11,9 +11,9 @@ describe ArchivesController do
 
   it "affiche les archives du mois précédents" do
     past_month = 6
-    nicolas = Factory(:kantenien, :name =>'nicolas')
-    cdc = Factory(:customer, :name => 'Cour des comptes')
-    Factory(:activity_note, :customer => cdc, :user => nicolas, :working_days => 1,
+    nicolas = Factory.create(:kantenien, :name =>'nicolas')
+    cdc = Factory.create(:customer, :name => 'Cour des comptes')
+    Factory.create(:activity_note, :customer => cdc, :user => nicolas, :working_days => 1,
       :month => past_month, :year => Date.today.year, :validation_state => false)
     
     get 'index'
@@ -31,9 +31,9 @@ describe ArchivesController do
 
   it "affiche les archives du mois de juin" do
     past_month = 6
-    nicolas = Factory(:kantenien, :name =>'nicolas')
-    cdc = Factory(:customer, :name => 'Cour des comptes')
-    Factory(:activity_note, :customer => cdc, :user => nicolas, :working_days => 1,
+    nicolas = Factory.create(:kantenien, :name =>'nicolas')
+    cdc = Factory.create(:customer, :name => 'Cour des comptes')
+    Factory.create(:activity_note, :customer => cdc, :user => nicolas, :working_days => 1,
       :month => past_month, :year => Date.today.year, :validation_state => false)
 
     get 'index', :selected_month => past_month - 2

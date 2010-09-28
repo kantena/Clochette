@@ -36,7 +36,7 @@ class Customer < ActiveRecord::Base
   end
 
   def past_activity_notes month
-    ActivityNote.all :conditions => ["month = ? and year = ? and customer_id = ?", month, Date.today.year,self]
+    ActivityNote.all :conditions => ["month <= ? and year <= ? and customer_id = ?", month, Date.today.year, self]
   end
 
   private
