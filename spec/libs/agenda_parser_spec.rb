@@ -92,7 +92,7 @@ describe AgendaParser do
     it "cas avec un evenement finissant après le mois en cours et commençant pendant le mois en cours, la date de fin doit contenir le dernier jour du mois" do
       current_year = Date.today.year
       current_month = Date.today.month
-      if [1,3,5,5,6,8,10,12].include? current_month
+      if [1,3,5,7,8,10,12].include? current_month
         last_day_current_month = 31
       else
         last_day_current_month = 30
@@ -114,7 +114,7 @@ describe AgendaParser do
     it "cas avec un evenement a cheval sur le mois en cours. les dates de début et de fin doivent correspondre aux dates limites du mois" do
       current_year = Date.today.year
       current_month = Date.today.month
-      if [1,3,5,5,6,8,10,12].include? current_month
+      if [1,3,5,7,8,10,12].include? current_month
         last_day_current_month = 31
       else
         last_day_current_month = 30

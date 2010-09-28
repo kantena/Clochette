@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :name
 
   def is_developper?
-    function == "developper"
+    'developper' == function
   end
 
   def import_from parser
