@@ -10,6 +10,8 @@ describe ArchivesController do
   end
 
   it "affiche les archives du mois précédents" do
+    pending "test à revoir, dépendant des dates : ce test ne peut passer qu’à partir du mois de Juillet"
+
     past_month = 6
     nicolas = Factory.create(:kantenien, :name =>'nicolas')
     cdc = Factory.create(:customer, :name => 'Cour des comptes')
